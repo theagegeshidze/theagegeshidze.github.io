@@ -24,18 +24,18 @@ h1, h3, p{
 .myWeek1{
     margin: auto;
     max-width: 600px;
-    background-color: light sea green;
+    background-color: bisque;
 }
 
 
 /* Set the apperance of the class, chart */
 .chart{
-    background-color: white;
+    background-color: orange;
     width:330px;
     border-width: 10px;
     border-style: solid;
     border-radius: 5px;
-    border-color: green;
+    border-color: red;
 
     
 }
