@@ -24,14 +24,14 @@ h1, h3, p{
 .myWeek1{
     margin:auto;
     max-width:600px;
-    background-color:rgb(46, 139, 87);
+    background-color:rgb(225, 228, 196);
 }
 
 
 /* Set the apperance of the class, chart */
 .chart{
     background-color:rgb(255, 255, 255);
-    width:430px;
+    width:530px;
     border-width:10px;
     border-style:solid;
     border-radius:5px;
