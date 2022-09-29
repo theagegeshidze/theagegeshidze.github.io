@@ -13,6 +13,19 @@ body{
  
 }
 
+    <div class="title">
+        <h1><span style="color:rgb(0, 228, 0)">Data</span><span style="color:rgb(38, 52, 9)">Science</span></h1>
+    </div>
+
+    <div class="containerHomeScreen">
+        <button class="button1" onclick="window.location.href = 'portfolio'">Portfolio</button>
+    </div>   
+    <div class="containerHomeScreen">    
+        <button class="button2" onclick="window.location.href = 'project'">Project</button>
+    </div>       
+    <div class="containerHomeScreen">  
+        <button class="button3" onclick="location.href = 'https://github.com/theagegeshidze/theagegeshidze.github.io'">GitHub</button>
+    </div>
 
 /* Choose the appearance of the tags, h1, h3 and p: */
 h1, h3, p{
