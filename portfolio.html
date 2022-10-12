@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<!-- Richard Davies, Data Science 2021 -->
+
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+
+<head>
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+<!-- This line will change the appearance of the page-->
+<link href="style.css" rel="stylesheet">
+
+<!-- This line will change the font of the page -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+</style>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+</style>
+
+<!-- Meta stuff-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+
+<!-- ///////////////////  HEAD //////////////////////////////////// -->
+
+
+
+<!-- ///////////////////  START BODY //////////////////////////////////// -->
+
+<body>
+
+    <div class="header">
+        <h2><span style="color:seagreen">Data</span><span style="color:rgb(38, 52, 9)">Science</span></h2>
+    </div>
+
+    <div class="containerHomeScreen">
+        <button class="button4" onclick="window.location.href = 'index'">Home</button>
+        <button class="button4" onclick="window.location.href = 'project'">Project</button>
+        <button class="button5" onclick="location.href = 'https://github.com/jamesjeffery77/jamesjeffery77.github.io'">GitHub</button>
+    </div>
+    
+    <!-- This task involved embedding three charts onto my webpage, two of which were given in class,
+    the third was taken from the rapidcharts.io repository-->    
+    <div class="containertext">
+    <h3> Week 1 - Embedding Charts </h3>
+    </div>
+
+
+    <div class="container">
+    <!--chart1 - Data was used from example in class-->
+        <div class="chart" id="chart1">
+            <script>
+            var myChart1 = "chart1_co2emissionsfood.json";
+            vegaEmbed('#chart1', myChart1);
+            </script>
+        </div>
+
+        <!--chart2 - Data was used from example in class-->
+        <div class="chart" id="chart2">
+            <script>
+                var myChart2 = "chart2_co2emissionscountry.json";
+                vegaEmbed('#chart2', myChart2);
+            </script>
+        </div>
+        
+    
+
+    
+</body>
+<!-- ///////////////////  END BODY //////////////////////////////////// -->
+
+</html>
