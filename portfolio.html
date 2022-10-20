@@ -1,80 +1,129 @@
 <!DOCTYPE html>
-
-<!-- Richard Davies, Data Science 2021 -->
-
-
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
-
+<html lang="en">
 <head>
-<!--The next three lines allow the Vega embed-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nataly Tsangarides</title>
+
+    <link rel="stylesheet" href= "portfolio.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+
+        <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    
+    <!--Favicon-->
+<link rel="icon" href="icon.png">
 
-<!-- This line will change the appearance of the page-->
-<link href="portfolio.css" rel="stylesheet">
 
-<!-- This line will change the font of the page -->
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-</style>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-</style>
-
-<!-- Meta stuff-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 </head>
 
-<!-- ///////////////////  HEAD //////////////////////////////////// -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body {
+  margin: 0;
+  text-align: center !important;
+}
+
+</style>
+
+<div id="loader">
+  <div id="one"></div>
+  <div id="two"></div>
+</div>
+
+<div id="loadermessage">Loading...</div>
+
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+
+  <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("loadermessage").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
 
 
-
-<!-- ///////////////////  START BODY //////////////////////////////////// -->
 
 <body>
+ 
 
-    <div class="header">
-        <h2><span style="color:seagreen">Data</span><span style="color:rgb(38, 52, 9)">Science</span></h2>
-    </div>
-          
-    <div class="topnav">
-        <a href="home.html">Home</a>
-        <a href="aboutme.html">About me!</a>
-        <a href="project.html">Project</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="github.html">Github</a>
+<div style="margin-top:-10px;text-align:center !important;padding:1px 16px;">
 
-    <!-- This task involved embedding three charts onto my webpage, two of which were given in class,
-    the third was taken from the rapidcharts.io repository-->    
-    <div class="containertext">
-    <h3> Week 1 - Embedding Charts </h3>
-    </div>
+ <header>
+ 
+  <container>
+
+    <container class="hcontainer">
+
+  <h1>Data<span style="color:purple">Science</span></h1></span>
+
+  <h2><b>by Nataly Tsangarides</b> </h2>
+
+  <p>
+    <a class="button" href="index.html"><i class="fas fa-home faa-home animated-hover fa-4x" style="font-size: 1em;"></i> Home</a>  
+    <a class="buttonActive" href="portfolio.html"><i class="fas fa-chart-bar"></i> Portfolio</a>
+    <a class="button" href="project.html"><i class="fas fa-edit faa-edit animated-hover fa-4x" style="font-size: 1em;"></i> Project</a> 
+    <a class="button" href="https://github.com/NatalyTsangarides/NatalyTsangarides.github.io"><i class="fab fa-github faa-github animated-hover fa-4x" style="font-size: 1em;"></i> Github</a> 
+    <a class="button" href="https://rapidcharts.io/datascience"><i class="fas fa-book faa-book animated-hover fa-4x" style="font-size: 1em;"></i> Course</a>
+  </p>
+
+</container>
+</header>
+
+<container>
+
+  <container class="hcontainer">
 
 
-    <div class="container">
-    <!--chart1 - Data was used from example in class-->
-        <div class="chart" id="chart1">
-            <script>
-            var myChart1 = "chart1_co2emissionsfood.json";
-            vegaEmbed('#chart1', myChart1);
-            </script>
-        </div>
+  <p class="bodyText"><span style="color: rgb(49, 6, 40); font-weight: 700; font-size:25px;">Week 1: Embedding</p>
 
-        <!--chart2 - Data was used from example in class-->
-        <div class="chart" id="chart2">
-            <script>
-                var myChart2 = "chart2_co2emissionscountry.json";
-                vegaEmbed('#chart2', myChart2);
-            </script>
-        </div>
-        
-    
+  <h3>C02 Emissions: Food</h3>
 
-    
+  <p>The chart tracks carbon dioxide emissions by food.</p>
+
+<!--CHART 1-->
+<div class="chart" id="Chart1">
+<script>
+  var myChart1 = "chart1_co2emissionsfood.json";
+  vegaEmbed('#Chart1', myChart1);
+</script>
+</div>
+
+<h3>C02 Emissions by country</h3>
+
+   <p>The chart tracks carbon dioxide emissions by country.</p>
+
+<!--CHART 2 -->
+<div class="chart" id="Chart2">
+<script>
+  var myChart2 = "chart2_ukProductivity.json";
+  vegaEmbed('#Chart2', myChart2);
+</script>
+</div>
+ 
 </body>
-<!-- ///////////////////  END BODY //////////////////////////////////// -->
+</div>
+
 
 </html>
