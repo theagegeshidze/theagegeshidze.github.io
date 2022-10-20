@@ -2,7 +2,7 @@
     color: white;
     margin-bottom: 22px;
     margin-top: 40px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: lighter;
     text-align: center !important;
@@ -17,14 +17,14 @@
       width: 8px;
     }
     ::-webkit-scrollbar-track {
-      background: rgb(250, 243, 250);
+      background: rgb(209, 230, 213);
     }
     ::-webkit-scrollbar-thumb {
-      background: rgb(41, 6, 38);
+      background: rgb(6, 41, 22);
       border-radius: 10px;
     }
     ::-webkit-scrollbar-thumb:hover {
-      background: rgb(116, 18, 99);
+      background: rgb(18, 116, 74);
     } 
     
     .hcontainer {
@@ -42,7 +42,7 @@
     h1{
     
       color: rgb(8, 7, 7);
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 60px !important;
       margin-top: 10px;
       font-weight: bold;
@@ -59,14 +59,14 @@
 
     
     h3{
-      color: #403568;
+      color: #135124;
       margin-top: 25px;
-     font-family: 'Raleway', sans-serif;
+     font-family: 'Roboto', sans-serif;
     }
     
-    p{font-family: 'Raleway', sans-serif;
+    p{font-family: 'Roboto', sans-serif;
     
-    color: rgb(63, 25, 25);
+    color: rgb(25, 38, 63);
     }
     
     
@@ -75,10 +75,10 @@
      width: auto;
       position:static;
       border-width: 1px;
-      background-color: rgb(250, 243, 250);
+      background-color: rgb(243, 250, 243);
       border-style: solid;
       border-radius: 15px;
-      border-color: rgb(250, 243, 250);
+      border-color: rgb(243, 250, 243);
       margin: 1% 1% 3% 1%;;
       text-align: center !important;
      padding: 10px;
@@ -103,7 +103,7 @@
     
     
     body {
-      background-color: rgb(250, 243, 250);
+      background-color: rgb(243, 250, 243);
       max-width: 60%;
       margin-left: 235px !important;
       
@@ -116,20 +116,20 @@
     
     a:visited {
       color: #2d1247;
-      background-color: rgb(141, 22, 131);
+      background-color: rgb(22, 141, 105);
     }
     
     a:hover {
       text-decoration: none;
       opacity:1;
-      background-color: rgb(141, 22, 131);
-      border-color: rgb(248, 244, 248);
+      background-color: rgb(22, 141, 135);
+      border-color: rgb(244, 248, 245);
     }
     
     
     .button, .buttonActive {
-      border: 2px solid rgb(187, 39, 180);
-      color: rgb(116, 18, 99);
+      border: 2px solid rgb(39, 187, 115);
+      color: rgb(18, 116, 72);
       font-family: 'Raleway', sans-serif;
       line-height: 16px;
       font-weight: 600;
@@ -151,8 +151,8 @@
     
     .buttonActive {
       color: #2d1247;
-      color: rgb(253, 249, 252) !important;
-      background-color: rgb(141, 22, 131) !important;
+      color: rgb(249, 253, 250) !important;
+      background-color: rgb(22, 141, 107) !important;
     }
     
     @-webkit-keyframes edit {
@@ -374,7 +374,7 @@
     #two {
       position: absolute;
       border-radius: 50%;
-      background: #470447;
+      background: #3CB371;
       opacity: .0;
       animation: loading 1.4s infinite;
       height: 20px;
@@ -414,7 +414,7 @@
       width: 120px;
       height: 120px;
       font-weight: bold;
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Roboto', sans-serif;
       color: rgb(3, 2, 0);
       font-size: 20px; 
       letter-spacing: 1px; 
