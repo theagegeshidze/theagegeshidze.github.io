@@ -1,0 +1,64 @@
+{
+  "title": {
+    "text": "Dirty Dozen: Brand Packaging Pollutants in the UK",
+    "subtitle":"Percentage of pollution from brand packaging, 65% coming from 12 brands. Source: Surfers Against Sewage",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":12,
+    "anchor": "start",
+    "color": "black"
+  },
+"height": 300,
+"width": 250,
+"background":null,
+"data": {
+  "values": [
+    {"Type": "Coca-Cola", "Value":"16", "Category":"Food and Drink: Soda"},
+    {"Type": "PepsiCo", "Value":"9", "Category":"Food and Drink: Soda"},
+    {"Type": "AnheuserBusch inBev", "Value":"8", "Category":"Food and Drink: Alcohol"},
+    {"Type": "McDonalds", "Value":"5", "Category":"Food and Drink: Fast Food"},
+    {"Type": "Mondelez", "Value":"5", "Category":"Food and Drink: Fast Food"},
+    {"Type": "Heineken", "Value":"4", "Category":"Food and Drink: Alcohol"},
+    {"Type": "Tesco", "Value":"4", "Category":"Food and Drink: Groceries"}
+    {"Type": "Carlsbery", "Value":"3", "Category":"Food and Drink: Alcohol"},
+    {"Type": "Suntory", "Value":"3", "Category":"Food and Drink: Soda},
+    {"Type": "Haribo", "Value":"3", "Category":"Food and Drink: Confectionary"}
+    {"Type": "Mars", "Value":"3", "Category":"Food and Drink: Confectionary"}
+    {"Type": "Aldi", "Value":"2", "Food and Drink: Groceries"}
+    {"Type": "Others: 316 companies ", "Value":"35", "Category":"Other"}
+    {"Type": "DataScience", "Value":"200", "Category":"Invertebrate"}
+  ]
+},
+"mark": {"type": "bar", "color": "#7BCB58"},
+
+"encoding": {
+
+  "y": {"field": "Type", "sort": "x", "title": ""},
+  "x": {"aggregate": "sum", "field": "Value", "title": "Top 12 Brands contributing to Sewage Pollution"},
+
+  "color": {
+  "field": "Category", 
+  "type": "nominal",
+  "scale": {
+        "range": [
+          "#2e696b",
+          "#4db0b3",
+          "#95d1b5",
+          "#95d1b5",
+          "95d1b5",
+          "#95d1b5",
+          "#95d1b5",
+          "#95d1b5",
+          ""
+        ]
+    },
+    "legend": {"orient": "top-right"}
+  },
+
+  "tooltip": [
+    {"field": "Type"},
+    {"field": "Value", "title": "Number of threatened species"},
+    {"field": "Category"}
+  ]
+}
+  
+}
