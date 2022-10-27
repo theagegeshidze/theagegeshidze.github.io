@@ -1,0 +1,44 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "title": {
+    "text": "Ozone concentration in the UK",
+    "subtitle": "Average daily Ozone concentration for the UK ",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+    "width":300,
+    "height":290,
+    "background":null,
+
+    "encoding": {
+      
+      "x": {
+        "field": "end", 
+        "type": "temporal",
+        "title":null
+        },
+  
+      "y": {
+        "field": "average", 
+        "type": "quantitative",
+        "scale": {"domain": [0.08, 0.25]},
+        "title":null
+        }
+    },
+  
+
+    "layer":[
+      {"data": {"url": "https://api.v2.emissions-api.org/api/v2/ozone/average.json?country=gb&begin=2010-02-01&end=2022-07-01"},
+  
+    "mark":{
+      "type": "circle",
+      "color":"green",
+      "opacity":0.5
+    }
+    }
+  ]  
+}
