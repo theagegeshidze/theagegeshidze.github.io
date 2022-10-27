@@ -97,7 +97,7 @@ body {
 
 
   <p class="bodyText"><span style="color: rgb(6, 35, 49); font-weight: 700; font-size:25px;">Week 1: Setting up web page and embedding two charts</p>
-   <p> TasK: Set up your GitHub repository and design your first home page using the index.html file we provided.
+  <p> TasK: Set up your GitHub repository and design your first home page using the index.html file we provided.
   Replace the two charts with two more from the rapidcharts repository, and change the titles and
   descriptions of the charts. </p>
         
@@ -125,8 +125,56 @@ body {
 </script>
 </div>
  <p>The chart above tracks carbon dioxide emissions by country.</p>
+ </div>
+     
+<p class="bodyText"><span style="color: rgb(6, 35, 49); font-weight: 700; font-size:25px;">Week 2: Two Charts: using inline data </p>
+  <p> Clearly label your portfolio page so that we can see Week 2. Now add two charts:
+1. A chart of IMF lending outstanding, hosted on your GitHub account. The data can be found
+here and here
+2. A chart improving the one used by the FT. The data for this will also be hosted on your
+GitHub account. The data transform can be done at the analysis stage (on your local
+computer) or at the visualisation stage, using “transform” in Vega-Lite.
+3. Comment (not more than 25 words) on which is the most ‘risky’ year, is it 2022, as the class
+voted for, or some other year? </p>
+        
+<p class="bodyText"><span style="color: rgb(6, 35, 49); font-weight: 700; font-size:25px;">Week 3: Two Charts </p>
+  <p> This week we have discussed multiple ways of feeding data into the Vega visualisation, and how the
+different data dimensions can be mapped onto visual attributes, i.e. “encodings”.
+1. A chart that has the data source defined inline, in the Vega-lite specification. This is best
+produced using by exporting JSON using the python data conversion pipelines discussed in
+class. Any chart, any data, but: your data should contain at least 100 data points, and
+minimum 3 dimensions.
+2. A modified chart from the previous point, using a different visual encoding.
+3. Comment (not more than 25 words) what is the difference in the second visual encoding and
+especially why did you choose it.</p>
+        
+<p class="bodyText"><span style="color: rgb(6, 35, 49); font-weight: 700; font-size:25px;">Week 4: Data Scraper </p>
+  <p> This week we have discussed the simple ways of scraping data from websites. Using a Google Colab
+python notebook, scrape a website through one of the presented methods in class (pandas read_html
+or beautifulsoup). Then clean and normalise the data and export into TIDY (long form) format.
+1. A link to the Google Collab python notebook where you conducted your data analysis (make
+sure you make it publicly accessible!)
+2. A chart built with the data from the previous point. It is up to you what how do you reference
+and include the data in the Vega-lite chart specification.
+3. Comment (not more than 25 words) why did you choose this site</p>
+        
+<p class="bodyText"><span style="color: rgb(6, 35, 49); font-weight: 700; font-size:25px;">Week 5: API </p>
+  <p> Use the ONS API to batch download nine different series as JSON files. Save these to your GitHub
+account, and use these (as “raw” files) to supply the data to nine (or more) charts on a theme or
+themes of your choice. Homework notes:
+• We have discussed the ONS API in class. The generic form is:
+o https://api.ons.gov.uk/timeseries/{SERIES_ID}/dataset/{DATASET_ID}/data
+o You need to provide the series and data IDs, looping over one of these.
+• A working example is:
+o https://api.ons.gov.uk/timeseries/cpoa/dataset/pusf/data
+• We have discussed using loops to batch download from APIs, using FRED. Apply these skills
+to the ONS API.
+• Charts should be time series, and use the time series API above.
+• You can cover any topic, or topics of your choice.
+• Given that you are making 9 very similar charts, they should be smaller than the normal chart
+size you are using on your page.
+• Ensure you add a link to the Google Collab python notebook where you conducted your data
+analysis (make sure you make it publicly accessible!)</p>
+
 </body>
-</div>
-
-
 </html>
