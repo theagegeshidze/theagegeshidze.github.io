@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Multi-series Line Chart with Halo. Use pivot and repeat-layer as a workaround to facet groups of lines and their halo strokes. See https://github.com/vega/vega-lite/issues/6192 for more discussion.",
+  "data": {
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=newCasesBySpecimenDate&format=csv",
+    "format": {"type": "csv"}
+
+  },
+  "title": {
+    "text": "New Covid Cases by region",
+    "subtitle": "data downloaded using an API",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=newCasesBySpecimenDate&format=csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "areaName",
+        "oneOf": ["Lewisham", "Kensington and Chelsea", "Bexley"]
+      }
+    }
+  ],
+  "height": 300,
+  "width": 290,
+  "background": null,
+  "mark": {"type": "line", "point": false},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "newCasesBySpecimenDate",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "color": {
+      "field": "areaName",
+      "type": "nominal",
+      "scale": {"scheme": "set1"},
+      "title": "LEGEND TITLE",
+      "legend": {"orient": "top-left", "fillColor": null}
+    }
+  }
+}
