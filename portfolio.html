@@ -150,7 +150,12 @@ especially why did you choose it.</p>
         <p>
         <h3>IMF Lending - Outstanding</h3>
         <p>Credit Outstanding to all members, 1984-2022 - uncorrected chart</p>
-        <div class="chart" id="chart3"></div>
+       <!--CHART 3-->
+       <div class="chart" id="Chart3">
+       <script>
+       var myChart3 = "IMF.json";
+       vegaEmbed('#Chart3', myChart3);
+       </script>
 
         <h3>IMF Lending - Percentage of Global GDP</h3>
         <p>Credit Outstanding to all members, 1984-2021 - corrected chart</p>
@@ -162,12 +167,7 @@ especially why did you choose it.</p>
         </p>
         
 <!--CHART 3-->
-<div class="chart" id="Chart3">
-<script>
-  var myChart3 = "SurfersAgainstSewage.json";
-  vegaEmbed('#Chart3', myChart3);
-</script>
-</div>
+
         
 <p class="bodyText"><span style="color: rgb(6, 35, 49); font-weight: 700; font-size:25px;">Week 4: Data Scrapers </p>
   <p> This week we have discussed the simple ways of scraping data from websites. Using a Google Colab
