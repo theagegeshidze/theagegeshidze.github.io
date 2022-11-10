@@ -8,18 +8,18 @@
     "anchor": "start",
     "color": "black"},
 
-"data":{"url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/CLEANEDdata_IMF_creditOutstanding.csv"},
+"data":{"url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/CLEANEDdata_IMF.csv"},
 
 "height": 300,
 "width": 260,
 
 "mark": {
   "type": "bar",
-  "color": "rgb(129, 219, 50)"},
+  "color": "rgb(243, 158, 247)"},
 
 "encoding": {
    "x": {
-     "field": "Year",
+     "field": "Date",
      "type": "temporal",
      "axis": {
        "title": null,
@@ -28,7 +28,7 @@
        "labelAngle": 45}},
 
     "y": {
-      "field": "Total (Billions)",
+      "field": "Total in Billions",
       "type": "quantitative",
       "title": "",
       "axis": {"grid": false}}
