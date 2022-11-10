@@ -28,7 +28,7 @@
        "labelAngle": 45}},
 
     "y": {
-      "field": "Total (billions)",
+      "field": "Total (Billions)",
       "type": "quantitative",
       "title": "",
       "axis": {"grid": false}}
