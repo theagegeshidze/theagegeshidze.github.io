@@ -8,7 +8,7 @@
    },
   "mark": "line",
   "encoding": {
-    "x": {"field": "TIME", "type": "temporal", "axis": {"labelAngle": 0}},
+    "x": {"field": "TIME", "type": "nominal", "axis": {"labelAngle": 0}},
     "y": {"field": "Value", "type": "quantitative"}
   }
 }
