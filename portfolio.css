@@ -43,7 +43,7 @@
     
       color: rgb(8, 7, 7);
       font-family: 'Roboto', sans-serif;
-      font-size: 60px !important;
+      font-size: 30px !important;
       margin-top: 10px;
       font-weight: bold;
     }
@@ -52,7 +52,7 @@
     
       color: rgb(59, 60, 61);
       margin-top: -30px !important;
-      font-size: 18px !important;
+      font-size: 20px !important;
       font-family: 'Roboto', sans-serif !important;
     }
 
@@ -60,7 +60,7 @@
     
     h3{
       color: #135124;
-      margin-top: 25px;
+      margin-top: 10px;
      font-family: 'Roboto', sans-serif;
     }
     
