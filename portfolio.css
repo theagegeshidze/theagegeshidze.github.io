@@ -1,113 +1,230 @@
-.bodyText {
-    color: white;
-    margin-bottom: 22px;
-    margin-top: 40px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: lighter;
-    text-align: center !important;
-    padding: 0 ;
-    }
-    
-    .pagecontainer {
-      display: grid;
-    }
+body {
+   margin: 0;
+   padding: 0;
+   min-height: 100vh;
+   background-color:rgb(250, 243, 250);
+   font-family: 'Raleway', sans-serif;
+}
 
-::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: rgb(209, 230, 213);
-    }
-    ::-webkit-scrollbar-thumb {
-      background: rgb(6, 41, 22);
-      border-radius: 10px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: rgb(18, 116, 74);
-    } 
+h1{
     
-    .hcontainer {
-      display: flow-root;
-      position: relative;
-      text-align: center;
-      border: 3px solid rgb(5, 0, 0);
-      border-top:none;
-      border-left: none;
-      border-right: none;
-    }
+   color: rgb(8, 7, 7);
+   font-family: 'Raleway', sans-serif !important;
+   margin-right: 30px !important;
+   font-size: 60px !important;
+   margin-top: 0px;
+   font-weight: bold !important;
+ }
+
+ h2{
     
-    
-    
-    h1{
-    
-      color: rgb(8, 7, 7);
-      font-family: 'Roboto', sans-serif;
-      font-size: 30px !important;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    
-    h2{
-    
-      color: rgb(59, 60, 61);
-      margin-top: -30px !important;
-      font-size: 20px !important;
-      font-family: 'Roboto', sans-serif !important;
-    }
+   color: rgb(59, 60, 61);
+   margin-top: 100px !important;
+   font-size: 18px !important;
+   font-family: 'Raleway', sans-serif !important;
+   margin-left: -200px !important;
+ }
 
 
-    
-    h3{
-      color: #135124;
-      margin-top: 10px;
-     font-family: 'Roboto', sans-serif;
-    }
-    
-    p{font-family: 'Roboto', sans-serif;
-    
-    color: rgb(25, 38, 63);
-    }
-    
-    
-    
-    .chart{
-     width: auto;
-      position:static;
-      border-width: 1px;
-      background-color: rgb(243, 250, 243);
-      border-style: solid;
-      border-radius: 15px;
-      border-color: rgb(243, 250, 243);
-      margin: 1% 1% 3% 1%;;
-      text-align: center !important;
-     padding: 10px;
-     
-      
-      /*5px 50px 25px 200px*/
-    
-    }
-    
-    .chart:hover {
-      transform: scale(1.04, 1.04);
-      transition: 0.6s;
-      
-    }
-    
-    p {
-      font-size: 18px;
-      margin: 5px 5px;
-      line-height: 22.4px;
-      color: #323232; 
-    }
-    
-    
-    body {
-      background-color: rgb(243, 250, 243);
-      max-width: 60%;
-      margin-left: 235px !important;
-      
-     }
+body, .nav, .menu, .smenu, .sectional_nav{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.sectional_nav{
+   position:fixed;
+   margin-bottom: -170px;
+   background-color: rgb(255, 255, 255);
+   padding: 5px;
+   transition: 0.5s;
+   border-radius: 50px;
+   overflow: hidden;
+   box-shadow: 0 8px 15px rgba(161, 121, 121, 0.2);
+}
+
+.sectional_nav input:checked ~ .smenu {
+   width: 400px;
+   height: 30px;
+   padding-right: 20px;
+}
+
+.sectional_nav input {
+   width: 20px;
+   height: 20px;
+   opacity: 0;
+}
+
+.sectional_nav span {
+   position: absolute;
+   border-radius: 50;
+   background-color: rgb(12, 1, 1);
+   pointer-events: none;
+   transition: 0.5s;
+}
+
+.smenu {
+   margin: 0;
+   padding: 0;
+   width: 0;
+   overflow: hidden;
+   transition: 0.5s;
+}
+
+.smenu li {
+   list-style: none;
+   margin: 0 10px;
+}
+
+.smenu li a {
+   text-decoration: none;
+   color: rgb(8, 0, 0);
+   text-transform: uppercase;
+   font-weight: 600;
+   transition: 0.5s;
+}
+
+.sectional_nav input {
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   opacity: 0;
+}
+
+.sectional_nav input:checked ~ span {
+   background-color: #4b0c48 !important;
+}
+
+.sectional_nav span:nth-child(2) {
+   transform: translateY(-8px);
+}
+
+
+.sectional_nav input:checked ~ span:nth-child(2) {
+   transform: translateY(0) rotate(-45deg);
+   display: none;
+}
+.sectional_nav span:nth-child(3) {
+   transform: translateY(8px);
+}
+
+.sectional_nav input:checked ~ span:nth-child(3) {
+   transform: translateY(0) rotate(45deg);
+   display: none;
+}
+
+
+.sectional_nav input:checked ~ span:nth-child(4) {
+   transform: translateY(0) rotate(-45deg);
+   display: none;
+}
+
+.nav {
+   position: relative;
+   background-color: rgb(255, 255, 255);
+   padding: 20px;
+   transition: 0.5s;
+   border-radius: 50px;
+   overflow: hidden;
+   box-shadow: 0 8px 15px rgba(0,0,0,.2);
+}
+
+.menu {
+   margin: 0;
+   padding: 0;
+   width: 0;
+   overflow: hidden;
+   transition: 0.5s;
+}
+
+.nav input:checked ~ .menu {
+   width: 400px;
+}
+
+.menu li {
+   list-style: none;
+   margin: 0 10px;
+}
+
+.menu li a {
+   text-decoration: none;
+   color: #666;
+   text-transform: uppercase;
+   font-weight: 600;
+   transition: 0.5s;
+}
+
+.menu li a:hover {
+   color: #360944;
+}
+
+.nav input {
+   width: 40px;
+   height: 40px;
+   cursor: pointer;
+   opacity: 0;
+}
+
+.lines {
+   width: 25px;
+   height: 3px;
+   background: #596778;
+   display: block;
+   position: relative;
+   top: 50%;
+   left: 30%;
+}
+
+.nav span {
+   position: absolute;
+   left: 30px;
+   width: 30px;
+   height: 4px;
+   border-radius: 50px;
+   background-color: rgb(14, 1, 1);
+   pointer-events: none;
+   transition: 0.5s;
+}
+
+.nav input:checked ~ span {
+   background-color: #4b0c48;
+}
+
+.nav span:nth-child(2) {
+   transform: translateY(-8px);
+}
+
+
+.nav input:checked ~ span:nth-child(2) {
+   transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3) {
+   transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) {
+   transform: translateY(0) rotate(45deg);
+}
+
+.nav input:checked ~ span:nth-child(4) {
+   transform: translateY(0) rotate(-45deg) !important;
+   display: none;
+}
+
+@media only screen
+and (max-device-width : 800px) { 
+
+.nav {display: none !important;}
+
+}
+
+@media only screen
+and (min-device-width : 800px) { 
+
+.sectional_nav {display: none !important;}
+
+}
     
     
     a:link {
