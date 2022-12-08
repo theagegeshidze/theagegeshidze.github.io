@@ -69,13 +69,33 @@
     color: rgb(25, 38, 63);
     }
     
-hr {
-    border: none;
-    height: 10px;
-    /* Set the hr color */
-    color: #00A300; /* old IE */
-    background-color: #00A300; /* Modern Browsers */
-}
+  }
+  
+  section {
+    min-height: 100vh;
+  }
+
+  
+  section#header {
+    background: rgb(214,151,251);
+    background: radial-gradient(circle, #bbaeff 40%, #b6e6ff 80%);
+    color: white;
+    min-height: 30vh;
+    font-family: 'Monoton', sans-serif;
+  }
+  
+  section#Week {
+
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: rgba(0, 47, 167,1);
+    color: #0f2852;
+    /* background is the gradient variable, and the animation gradually takes place over 10s, alternate means it goes in reverse */
+    background: var(--gradient);
+    background-size: 300%;
+    animation: bg_animation 10s infinite alternate;
+
+  }
        
     .chart{
      width: auto;
