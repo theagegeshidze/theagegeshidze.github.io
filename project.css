@@ -69,8 +69,14 @@
     color: rgb(25, 38, 63);
     }
     
-    
-    
+hr {
+    border: none;
+    height: 4px;
+    /* Set the hr color */
+    color: #00A300; /* old IE */
+    background-color: #00A300; /* Modern Browsers */
+}
+       
     .chart{
      width: auto;
       position:static;
@@ -87,12 +93,7 @@
       /*5px 50px 25px 200px*/
     
     }
-    
-    .chart:hover {
-      transform: scale(1.04, 1.04);
-      transition: 0.6s;
-      
-    }
+   
     
     p {
       font-size: 18px;
