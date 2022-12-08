@@ -26,8 +26,11 @@ h1{
  }
 
 hr {
-  border: 0;
-  border-top: 8px solid green;
+    border: none;
+    height: 4px;
+    /* Set the hr color */
+    color: #00A300; /* old IE */
+    background-color: #00A300; /* Modern Browsers */
 }
 
 body, .nav, .menu, .smenu, .sectional_nav{
