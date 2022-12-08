@@ -20,11 +20,19 @@ h1{
     
    color: rgb(59, 60, 61);
    margin-top: 100px !important;
-   font-size: 18px !important;
+   font-size: 25px !important;
    font-family: 'Raleway', sans-serif !important;
    margin-left: -200px !important;
  }
 
+h3{
+    
+   color: rgb(00, 00, 00);
+   margin-top: 100px !important;
+   font-size: 15px !important;
+   font-family: 'Raleway', sans-serif !important;
+   margin-left: -200px !important;
+ }
 hr {
     border: none;
     height: 4px;
