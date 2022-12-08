@@ -25,6 +25,10 @@ h1{
    margin-left: -200px !important;
  }
 
+hr {
+  border: 0;
+  border-top: 2px solid green;
+}
 
 body, .nav, .menu, .smenu, .sectional_nav{
    display: flex;
