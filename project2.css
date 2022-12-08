@@ -1,0 +1,233 @@
+
+
+/**************** DESIGN FOR ALL MY TEXT *****************/
+body {
+    font-family: 'Roboto', sans-serif;  
+    margin: 0px;
+  }
+
+  /* my top navigation bar */
+  nav {
+    background: rgb(214,151,251);
+    background: radial-gradient(circle, #bbaeff 40%, #b6e6ff 80%);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    /* sticky so that when scrolling the nav bar stays at the top of the screen. */
+    position: sticky;
+    top: 0px;
+    /* z-index of 1 so that the bar stays above my chart elements */
+    z-index: 1;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(0, 47, 167,1);
+    color: #0f2852;
+  }
+  
+  nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0px 20px;
+    font-size: 1.3em;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  nav a.active{
+    color: #2b377c;
+    text-decoration: overline underline;
+  }
+  
+  section {
+    min-height: 100vh;
+  }
+
+  
+  section#header {
+    background: rgb(214,151,251);
+    background: radial-gradient(circle, #bbaeff 40%, #b6e6ff 80%);
+    color: white;
+    min-height: 30vh;
+    font-family: 'Monoton', sans-serif;
+  }
+  
+  section#Week {
+
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: rgba(0, 47, 167,1);
+    color: #0f2852;
+    /* background is the gradient variable, and the animation gradually takes place over 10s, alternate means it goes in reverse */
+    background: var(--gradient);
+    background-size: 300%;
+    animation: bg_animation 10s infinite alternate;
+
+  }
+
+/* defining the variable gradient for my animated background */
+:root {
+    --gradient: linear-gradient(
+        70deg,
+        #bbaeff 15%,
+        #b6e6ff 60%,
+        #f5d0fc 100%
+        );
+}
+/* defining the animation for my background */
+@keyframes bg_animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+  section#dashboard {
+    background: #e7a8f4;
+    color: #084012;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: rgba(0, 47, 167,1);
+  }
+  
+  article {
+    width: 90%;
+    max-width: 1000px;
+    padding: 5px;
+    margin: 0px auto;
+  }
+
+  
+  h1{
+    color:rgb(10, 10, 10);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+  h2 {
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    font-size: 3em;
+    color: rgba(0, 47, 167,1);
+  }
+
+
+/* Choose the appearance of the tags h3: */
+h3{
+    color:rgba(0, 47, 167,1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p{
+    color:rgb(10, 10, 10);
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* if i wanted to add a box around this text i could use
+    padding: 10px 10px 10px 10px; 
+    border-style: solid;
+    border-width:2px; */
+}
+
+p a{
+    color: rgba(0, 47, 167,1);
+    text-decoration: none;
+
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
+
+/* Charts go Within, background white to stay consistent and accent border */
+.chart{
+    background-color: #ffffff;
+
+    display:inline-block;
+    justify-content: center;
+    
+    border-radius: 0px;
+    border-color: rgba(0, 47, 167,1);
+    border-width: 3px;
+    border-style: solid;
+    
+    padding: 3px;
+    margin: 3px;
+    z-index: 0;
+
+}
+
+
+.container1 {
+    display: flex;
+    flex-flow: wrap;
+    column-gap: 20px;
+    margin-top: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+.container {
+    display: flex;
+    margin: auto;
+    flex-flow: wrap;
+   
+    padding: 20px;
+    
+    max-width: 1000px; 
+    justify-content: center;
+    align-content: center;
+
+  }
+
+#text {
+    position: static;
+    top: 80px;
+    right: 50px;
+    bottom: 50px;
+    left: 50px;
+    padding: 0px;
+    overflow-y: hidden;
+    box-sizing: border-box;
+  }
+
+  #text2 {
+    position: static;
+    top: 80px;
+    right: 50px;
+    bottom: 50px;
+    left: 50px;
+    padding: 0px;
+    overflow-y: hidden;
+    box-sizing: border-box;
+  }
+  
+  @media
+  (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 11px;
+    }
+  }
