@@ -8,14 +8,14 @@
   
         "title": {
           "text": "Current receipts: Taxes on production",
-          "subtitle": "Stamp duty (shares) HMRC : £m CPNSA",
+          "subtitle": "Stamp duty (shares) HMRC",
           "subtitleFontStyle":"italic",
           "subtitleFontSize":8,
           "anchor": "start",
           "color": "black"},
   
       "width":200,
-      "height":150,
+      "height":200,
   
       "mark":{
           "type": "line",
