@@ -7,8 +7,8 @@
       "property": "quarters"}},
   
         "title": {
-          "text": "Taxes on production: Fuel duty: £m CPNSA",
-          "subtitle": "Stamp duty (shares) HMRC : £m CPNSA",
+          "text": "Taxes on production: Fuel duty",
+          "subtitle": "Fuel Duty",
           "subtitleFontStyle":"italic",
           "subtitleFontSize":8,
           "anchor": "start",
@@ -25,6 +25,6 @@
   
     "encoding": {
       "x": {"field": "year", "type": "temporal"},
-      "y": {"field": "value", "type": "quantitative", "title":"Stamp Duty Taxes", "scale": {"domain":[0,8000]}}
+      "y": {"field": "value", "type": "quantitative", "title":"£ Millions (Current Prices)", "scale": {"domain":[0,8000]}}
     }
   }
