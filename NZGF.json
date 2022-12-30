@@ -1,0 +1,30 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Google's stock price over time.",
+    "data": {"url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/data_ONS-NZGF.json", 
+    "format":{
+      "type":"json",
+      "property": "quarters"}},
+  
+        "title": {
+          "text": "Taxes on production",
+          "subtitle": "VAT, receivable",
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":8,
+          "anchor": "start",
+          "color": "black"},
+  
+      "width":200,
+      "height":200,
+  
+      "mark":{
+          "type": "line",
+          "color":"darkseagreen",
+          "strokeWidth":2,
+          "opacity":1},
+  
+    "encoding": {
+      "x": {"field": "year", "type": "temporal", "title":"Year"},
+      "y": {"field": "value", "type": "quantitative", "title":"£ Millions (current prices)", "scale": {"domain":[0,50000]}}
+    }
+  }
