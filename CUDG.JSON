@@ -1,0 +1,30 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Google's stock price over time.",
+    "data": {"url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/data_ONS-CUDG.json", 
+    "format":{
+      "type":"json",
+      "property": "quarters"}},
+  
+        "title": {
+          "text": "CG: Current receipts: Taxes on production: Fuel duty: £m CPNSA",
+          "subtitle": "Stamp duty (shares) HMRC : £m CPNSA",
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":8,
+          "anchor": "start",
+          "color": "black"},
+  
+      "width":200,
+      "height":150,
+  
+      "mark":{
+          "type": "line",
+          "color":"darkseagreen",
+          "strokeWidth":2,
+          "opacity":1},
+  
+    "encoding": {
+      "x": {"field": "year", "type": "temporal"},
+      "y": {"field": "value", "type": "quantitative", "title":"Stamp Duty Taxes", "scale": {"domain":[0,1500]}}
+    }
+  }
