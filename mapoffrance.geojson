@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 400,
+  "height": 400,
+  "title": {
+    "text": "Map of France",
+    "color": "black",
+    "subtitle": ["Reveal province names when hovering", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 12,
+    "anchor": "middle",
+    "color": "black",
+  },
+  "style": "cell",
+  "data": [
+    {
+      "name": "source_0",
+      "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/franceweek7.json",
+      "format": {"type": "topojson", "feature": "FRA_adm2", "parse": {}},
+      "transform": [
+        {
+          "type": "formula",
+          "expr": "datum[\"properties\"] && datum[\"properties\"][\"NAME_2\"]",
+          "as": "properties.NAME_2"
+        }
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "size": {"signal": "[width, height]"},
+      "fit": {"signal": "data('source_0')"},
+      "type": "mercator"
+    }
+  ],
+  "marks": [
+    {
+      "name": "marks",
+      "type": "shape",
+      "style": ["geoshape"],
+      "from": {"data": "source_0"},
+      "encode": {
+        "update": {
+          "fill": {"value": "darkgreen"},
+          "stroke": {"value": "white"},
+          "strokeWidth": {"value": 1},
+          "tooltip": {
+            "signal": "isValid(datum[\"properties.NAME_2\"]) ? datum[\"properties.NAME_2\"] : \"\"+datum[\"properties.NAME_2\"]"
+          },
+          "ariaRoleDescription": {"value": "geoshape"},
+          "description": {
+            "signal": "\"properties.NAME_2: \" + (isValid(datum[\"properties.NAME_2\"]) ? datum[\"properties.NAME_2\"] : \"\"+datum[\"properties.NAME_2\"])"
+          }
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}]
+    }
+  ]
+}
