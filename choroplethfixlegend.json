@@ -1,0 +1,111 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "",
+  "background": null,
+  "padding": 20,
+  "width": 500,
+  "height": 300,
+  "title": {
+    "text": [
+      "Annual Carbon Dioxide Emissions Globally",
+      "Data available from 1965-2021"
+    ],
+    "subtitle": "Source: combination of information from ourworldindata.org Global Carbon Project and worldometer.info",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "style": "cell",
+  "data": [
+    {
+      "name": "source_1",
+      "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/worldcountries.json",
+      "format": {"type": "topojson", "feature": "countries1"}
+    },
+    {
+      "name": "source_0",
+      "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/anncarbonemissionsw7.csv",
+      "format": {"type": "csv", "delimiter": ","},
+      "transform": [
+        {
+          "type": "lookup",
+          "from": "source_1",
+          "key": "properties.name",
+          "fields": ["Country"],
+          "values": ["properties", "type", "geometry"]
+        },
+        {
+          "type": "formula",
+          "expr": "datum[\"properties\"] && datum[\"properties\"][\"name\"]",
+          "as": "properties.name"
+        },
+        {"type": "filter", "expr": "datum.Year==year"},
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Annual C02 emissions\"]) && isFinite(+datum[\"Annual C02 emissions\"])"
+        }
+      ]
+    }
+  ],
+  "projections": [
+    {
+      "name": "projection",
+      "size": {"signal": "[width, height]"},
+      "fit": {"signal": "data('source_0')"},
+      "type": "equalEarth"
+    }
+  ],
+  "signals": [
+    {
+      "name": "year",
+      "value": 2019,
+      "bind": {
+        "input": "range",
+        "min": 1965,
+        "max": 2021,
+        "step": 1,
+        "name": "Select year:"
+      }
+    }
+  ],
+  "marks": [
+    {
+      "name": "marks",
+      "type": "shape",
+      "style": ["geoshape"],
+      "from": {"data": "source_0"},
+      "encode": {
+        "update": {
+          "fill": {"scale": "color", "field": "Annual C02 emissions"},
+          "tooltip": {
+            "signal": "{\"Country\": isValid(datum[\"properties.name\"]) ? datum[\"properties.name\"] : \"\"+datum[\"properties.name\"], \"Annual C02 emissions\": format(datum[\"Annual C02 emissions\"], \"\")}"
+          },
+          "ariaRoleDescription": {"value": "geoshape"},
+          "description": {
+            "signal": "\"Annual C02 emissions: \" + (format(datum[\"Annual C02 emissions\"], \"\")) + \"; Country: \" + (isValid(datum[\"properties.name\"]) ? datum[\"properties.name\"] : \"\"+datum[\"properties.name\"])"
+          }
+        }
+      },
+      "transform": [{"type": "geoshape", "projection": "projection"}]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "linear",
+      "domain": {"data": "source_0", "field": "Annual C02 emissions"},
+      "range": "ramp",
+      "interpolate": "hcl",
+      "zero": false
+    }
+  ],
+  "legends": [
+    {
+      "fill": "color",
+      "gradientLength": {"signal": "clamp(height, 70, 300)"},
+      "title": "Annual C02 emissions"
+    }
+  ],
+  "config": {"style": {"cell": {"stroke": "transparent"}}}
+}
