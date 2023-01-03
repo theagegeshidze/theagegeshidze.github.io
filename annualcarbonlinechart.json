@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "This chart shows the change in the main components of electricity in the UK. Data was downloaded from https://ourworldindata.org/electricity-mix.",
+  "title": {
+    "text": "UK Electricity Sources 1985 - 2020 (%)",
+    "subtitle": "Total percentage by fuel source, Source: ourworldindata.org",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/project1.csv"
+  },
+  "height": 300,
+  "width": 700,
+  "background": null,
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "mark": "line",
+  "selection": {
+    "Type": {
+      "type": "single",
+      "fields": ["Type"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Africa ",
+          "Asia (excl. China and India) ",
+          "China ",
+          "Europe (excl. EU-27) ",
+          "European Union (27) ",
+          "India ",
+          "North America (excl. USA) ",
+          "South America ",
+          "United States "
+        ],
+        "name": "Country/Group Selector"
+      }
+    }
+  },
+  "transform": [{"filter": {"selection": "Type"}}],
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "title": "",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "Annual CO2 Emissions",
+      "type": "quantitative",
+      "scale": {"domain": [0, 8000000000]},
+      "title": "",
+      "axis": {"grid": true},
+      "sort": []
+    },
+    "color": {
+      "field": "Entity",
+      "type": "nominal",
+      "legend": {"orient": "top-right", "columns": 2},
+      "sort": [],
+      "scale": {"scheme": "darkmulti"}
+    },
+    "tooltip": [
+      {
+        "field": "Year",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Year"
+      },
+      {"field": "Metric tonnes", "type": "quantitative", "title": "Annual Emissions"},
+      {"field": "Type", "type": "nominal", "title": "Fuel Type"}
+    ]
+  }
+}
