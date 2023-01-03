@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/death.csv"
+  },
+  "mark": "bar",
+  "width": "400",
+  "height": 400,
+  "title": {
+    "text": "Deaths relating to Electricity Production",
+    "subtitle": "Deaths per TWh of electricity production. Source: Our World in Data",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "encoding": {
+    "y": {"field": "Energy Type", "sort": "-x", "type": "ordinal", "title": null},
+    "x": {"field": "Deaths per TWh of electricity production", "title": null, "type": "quantitative"},
+   "color": {"value": "#DE3163"},    
+    "tooltip": [
+      {"field": "Energy Type", "type": "nominal", "title": "Food"},
+      {"field": "Deaths per TWh of electricity production", "type": "quantitative", "title": "Deaths "},
+    ]
+  },
+}
