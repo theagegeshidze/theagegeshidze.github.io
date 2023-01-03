@@ -1,19 +1,37 @@
-﻿Date,Lowest cost grocery items,CPIH (Food and non-alcoholic beverages)
-Apr 2021,100.0,100.0
-May 2021,100.2,99.7
-Jun 2021,99.7,99.9
-Jul 2021,100.0,99.6
-Aug 2021,100.9,100.6
-Sep 2021,99.5,100.4
-Oct 2021,103.4,100.9
-Nov 2021,103.2,101.9
-Dec 2021,104.9,103.2
-Jan 2022,105.6,103.9
-Feb 2022,105.5,104.9
-Mar 2022,106.0,105.1
-Apr 2022,106.9,106.7
-May 2022,108,108.3
-Jun 2022,109.6,109.7
-Jul 2022,111.5,112.2
-Aug 2022,113.1,113.8
-Sep 2022,116.7,115.1
+﻿Date,Percentage,Category
+Apr 2021,100.0,Lowest cost grocery items
+May 2021,100.2,Lowest cost grocery items
+Jun 2021,99.7,Lowest cost grocery items
+Jul 2021,100.0,Lowest cost grocery items
+Aug 2021,100.9,Lowest cost grocery items
+Sep 2021,99.5,Lowest cost grocery items
+Oct 2021,103.4,Lowest cost grocery items
+Nov 2021,103.2,Lowest cost grocery items
+Dec 2021,104.9,Lowest cost grocery items
+Jan 2022,105.6,Lowest cost grocery items
+Feb 2022,105.5,Lowest cost grocery items
+Mar 2022,106.0,Lowest cost grocery items
+Apr 2022,106.9,Lowest cost grocery items
+May 2022,108,Lowest cost grocery items
+Jun 2022,109.6,Lowest cost grocery items
+Jul 2022,111.5,Lowest cost grocery items
+Aug 2022,113.1,Lowest cost grocery items
+Sep 2022,116.7,Lowest cost grocery items
+Apr 2021,100.0,CPIH (Food and non-alcoholic beverages)
+May 2021,99.7,CPIH (Food and non-alcoholic beverages)
+Jun 2021,99.9,CPIH (Food and non-alcoholic beverages)
+Jul 2021,99.6,CPIH (Food and non-alcoholic beverages)
+Aug 2021,100.6,CPIH (Food and non-alcoholic beverages)
+Sep 2021,100.4,CPIH (Food and non-alcoholic beverages)
+Oct 2021,100.9,CPIH (Food and non-alcoholic beverages)
+Nov 2021,101.9,CPIH (Food and non-alcoholic beverages)
+Dec 2021,103.2,CPIH (Food and non-alcoholic beverages)
+Jan 2022,103.9,CPIH (Food and non-alcoholic beverages)
+Feb 2022,104.9,CPIH (Food and non-alcoholic beverages)
+Mar 2022,105.1,CPIH (Food and non-alcoholic beverages)
+Apr 2022,106.7,CPIH (Food and non-alcoholic beverages)
+May 2022,108.3,CPIH (Food and non-alcoholic beverages)
+Jun 2022,109.7,CPIH (Food and non-alcoholic beverages)
+Jul 2022,112.2,CPIH (Food and non-alcoholic beverages)
+Aug 2022,113.8,CPIH (Food and non-alcoholic beverages)
+Sep 2022,115.1,CPIH (Food and non-alcoholic beverages)
