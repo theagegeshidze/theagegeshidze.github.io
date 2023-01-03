@@ -1,0 +1,401 @@
+"city","country","pop2023","latitude","longitude","fill"
+"Paris","France",2138551,48.8534,2.3488,"#3288bd"
+"Marseille","France",794811,43.297,5.38107,"#e6f598"
+"Lyon","France",472317,45.7485,4.84671,"#fee08b"
+"Toulouse","France",433055,43.6043,1.44367,"#fee08b"
+"Nice","France",338620,43.7031,7.26608,"#fee08b"
+"Nantes","France",277269,47.2173,-1.55336,"#fee08b"
+"Strasbourg","France",274845,48.5839,7.74553,"#fee08b"
+"Montpellier","France",248252,43.6109,3.87635,"#fc8d59"
+"Bordeaux","France",231844,44.8404,-0.5805,"#fc8d59"
+"Lille","France",228328,50.633,3.05858,"#fc8d59"
+"Rennes","France",209375,48.112,-1.67429,"#fc8d59"
+"Reims","France",196565,49.2653,4.02853,"#fc8d59"
+"Le Havre","France",185972,49.4938,0.10767,"#fc8d59"
+"Cergy-Pontoise","France",183430,49.0389,2.07805,"#fc8d59"
+"Saint-Etienne","France",176280,45.4339,4.39,"#fc8d59"
+"Toulon","France",168701,43.1244,5.92836,"#fc8d59"
+"Angers","France",168279,47.4716,-0.55202,"#fc8d59"
+"Grenoble","France",158552,45.1787,5.71479,"#fc8d59"
+"Dijon","France",149782,47.3167,5.01667,"#fc8d59"
+"Nimes","France",148236,43.8367,4.35788,"#fc8d59"
+"Aix-en-Provence","France",146821,43.5283,5.44973,"#fc8d59"
+"Saint-Quentin-en-Yvelines","France",146598,48.7719,2.01891,"#fc8d59"
+"Brest","France",144899,48.3903,-4.48628,"#fc8d59"
+"Le Mans","France",144515,48.0021,0.20251,"#fc8d59"
+"Amiens","France",143086,49.9,2.3,"#fc8d59"
+"Tours","France",141621,47.3948,0.70398
+"Limoges","France",141176,45.8336,1.24759
+"Clermont-Ferrand","France",138681,45.7797,3.08682
+"Villeurbanne","France",131445,45.766,4.8795
+"Besancon","France",128426,47.2488,6.01815
+"Orleans","France",124149,47.9029,1.90389
+"Metz","France",123914,49.1191,6.17269
+"Rouen","France",112787,49.4431,1.09932
+"Mulhouse","France",111430,47.752,7.32866
+"Perpignan","France",110706,42.6976,2.89541
+"Caen","France",110624,49.1858,-0.35912
+"Boulogne-Billancourt","France",108782,48.8354,2.24128
+"Nancy","France",105334,48.6844,6.18496
+"Argenteuil","France",101475,48.9479,2.24744
+"Saint-Denis","France",96128,48.9356,2.35387
+"Roubaix","France",95721,50.6942,3.17456
+"Tourcoing","France",91574,50.7239,3.16117
+"Montreuil","France",90652,48.8642,2.44322
+"Avignon","France",89769,43.9483,4.80892
+"Marseille 13","France",89316,43.3186,5.40836
+"Asnieres-sur-Seine","France",86742,48.9167,2.28333
+"Nanterre","France",86719,48.892,2.20675
+"Poitiers","France",85960,46.5826,0.34348
+"Versailles","France",85416,48.8036,2.13424
+"Courbevoie","France",85158,48.8967,2.25666
+"Creteil","France",84833,48.7927,2.46569
+"Pau","France",82697,43.3112,-0.35583
+"Colombes","France",82300,48.9188,2.25404
+"Vitry-sur-Seine","France",81001,48.7872,2.40332
+"Aulnay-sous-Bois","France",80615,48.9381,2.49402
+"Marseille 08","France",78837,43.2708,5.3821
+"Marseille 15","France",77770,43.3722,5.35386
+"Marseille 09","France",76868,43.2543,5.4057
+"La Rochelle","France",76810,46.1631,-1.15222
+"Champigny-sur-Marne","France",76726,48.8164,2.49366
+"Rueil-Malmaison","France",76616,48.8765,2.18967
+"Antibes","France",76393,43.5858,7.10831
+"Saint-Maur-des-Fosses","France",75402,48.7939,2.49323
+"Calais","France",74433,50.9519,1.85635
+"Beziers","France",74081,43.3412,3.21402
+"Dunkerque","France",71287,51.0344,2.37681
+"Aubervilliers","France",70914,48.9167,2.38333
+"Cannes","France",70011,43.5513,7.01275
+"Merignac","France",69791,44.8425,-0.64512
+"Bourges","France",67987,47.0833,2.4
+"Saint-Nazaire","France",67054,47.2751,-2.2179
+"Colmar","France",65405,48.0808,7.35584
+"Valence","France",63864,44.9256,4.90956
+"Quimper","France",63849,47.996,-4.09795
+"Drancy","France",62488,48.9258,2.44533
+"Noisy-le-Grand","France",62420,48.8498,2.56266
+"Villeneuve-d'Ascq","France",62400,50.6167,3.16664
+"La Seyne-sur-Mer","France",62330,43.1032,5.87816
+"Levallois-Perret","France",62178,48.8939,2.28864
+"Marseille 14","France",61920,43.3445,5.38004
+"Chambery","France",61640,45.5663,5.92079
+"Issy-les-Moulineaux","France",61447,48.821,2.27718
+"Neuilly-sur-Seine","France",61300,48.8846,2.26965
+"Troyes","France",60785,48.3007,4.08524
+"Antony","France",59845,48.7533,2.29668
+"La Roche-sur-Yon","France",59410,46.6697,-1.42757
+"Marseille 12","France",58734,43.2961,5.43617
+"Lorient","France",58112,47.7482,-3.37177
+"Sarcelles","France",57979,48.9974,2.37821
+"Pessac","France",57944,44.8056,-0.6324
+"Ivry-sur-Seine","France",57897,48.8157,2.38487
+"Evreux","France",57795,49.0241,1.15082
+"Venissieux","France",57584,45.6971,4.88593
+"Cergy","France",57576,49.0364,2.07613
+"Clichy","France",57467,48.9002,2.30952
+"Marseille 11","France",56792,43.2907,5.4384
+"Saint-Quentin","France",55407,49.8489,3.28757
+"Niort","France",54660,46.3231,-0.45877
+"Belfort","France",54562,47.6422,6.85385
+"Ajaccio","France",54364,41.9189,8.73812
+"Vannes","France",54020,47.6569,-2.76205
+"Sartrouville","France",53980,48.9482,2.19169
+"Maisons-Alfort","France",53964,48.8117,2.43945
+"Meaux","France",53811,48.9601,2.87885
+"Blois","France",53660,47.5943,1.32912
+"Brive-la-Gaillarde","France",53466,45.1589,1.53326
+"Arles","France",53431,43.6768,4.63031
+"Beauvais","France",53393,49.4333,2.08333
+"Chateauroux","France",53301,46.8125,1.69362
+"Cholet","France",53160,47.0589,-0.87974
+"Frejus","France",53098,43.4333,6.73555
+"Pantin","France",52922,48.8944,2.40935
+"Saint-Brieuc","France",52774,48.5151,-2.76838
+"Montauban","France",52434,44.0176,1.3542
+"Charleville-Mezieres","France",52415,49.7685,4.72487
+"Albi","France",52409,43.9298,2.148
+"Tarbes","France",52106,43.2341,0.07139
+"Fontenay-sous-Bois","France",52075,48.8544,2.48268
+"Evry","France",51900,48.6328,2.44049
+"Clamart","France",51400,48.803,2.26692
+"Marseille 10","France",51299,43.2789,5.41523
+"Chalons-en-Champagne","France",51257,48.9539,4.36724
+"Narbonne","France",50776,43.184,3.00141
+"Saint-Malo","France",50676,48.6474,-2.00877
+"Laval","France",50489,48.0725,-0.77019
+"Hyeres","France",50487,43.1204,6.12857
+"Carcassonne","France",49600,43.2165,2.34863
+"Angouleme","France",49468,45.65,0.15345
+"Annecy","France",49232,45.9088,6.12565
+"Bondy","France",48268,48.9018,2.48931
+"Le Blanc-Mesnil","France",48077,48.9387,2.46138
+"Villejuif","France",48048,48.7939,2.35992
+"Grasse","France",47581,43.6578,6.92537
+"Sevran","France",47334,48.9447,2.52746
+"Castres","France",47275,43.6053,2.24088
+"Chalon-sur-Saone","France",47251,46.7811,4.85372
+"Marseille 04","France",47193,43.3021,5.40141
+"Arras","France",47052,50.293,2.78186
+"Boulogne-sur-Mer","France",47013,50.7257,1.61392
+"Chelles","France",46947,48.8811,2.59295
+"Cagnes-sur-Mer","France",46923,43.6635,7.1479
+"Saint-Herblain","France",46898,47.2115,-1.651
+"Douai","France",46531,50.3707,3.07922
+"Epinay-sur-Seine","France",46145,48.9535,2.31514
+"Vincennes","France",45923,48.8486,2.43769
+"Martigues","France",45749,43.4073,5.05526
+"Marseille 03","France",45414,43.3026,5.37583
+"Bourg-en-Bresse","France",45340,46.2057,5.2258
+"Bobigny","France",44962,48.9098,2.45012
+"Montlucon","France",44960,46.3401,2.60254
+"Aubagne","France",44844,43.2928,5.57067
+"Valenciennes","France",44821,50.3591,3.52506
+"Suresnes","France",44697,48.8714,2.22929
+"Meudon","France",44652,48.8138,2.235
+"Marseille 05","France",44583,43.2955,5.40055
+"Bayonne","France",44396,43.4932,-1.473
+"Istres","France",44373,43.5135,4.98747
+"Thionville","France",44311,49.3599,6.16044
+"Mantes-la-Jolie","France",44263,48.9905,1.7167
+"Compiegne","France",44243,49.4179,2.82606
+"Nevers","France",43988,46.9896,3.159
+"Chartres","France",43838,48.4468,1.48925
+"Marseille 06","France",43360,43.2876,5.37918
+"Le Cannet","France",43353,43.5766,7.01912
+"Wattrelos","France",42826,50.7012,3.21812
+"Caluire-et-Cuire","France",42763,45.7946,4.8464
+"Gap","France",42715,44.5586,6.07868
+"Talence","France",42579,44.8085,-0.58915
+"Ales","France",42410,44.1249,4.08082
+"Gennevilliers","France",42294,48.9333,2.3
+"Saint-Priest","France",41641,45.6965,4.94385
+"Rosny-sous-Bois","France",41627,48.8702,2.4991
+"Auxerre","France",41516,47.7996,3.57033
+"Salon-de-Provence","France",41397,43.6423,5.09478
+"Saint-Germain-en-Laye","France",41142,48.8964,2.0904
+"Bastia","France",41001,42.7028,9.45
+"Marseille 01","France",40919,43.2981,5.38407
+"Sete","France",40736,43.4028,3.69278
+"Anglet","France",40658,43.4892,-1.51921
+"Puteaux","France",40646,48.8834,2.23894
+"Corbeil-Essonnes","France",40527,48.606,2.48757
+"Garges-les-Gonesse","France",39847,48.9679,2.39781
+"Roanne","France",39840,46.0362,4.06802
+"Savigny-sur-Orge","France",39698,48.6768,2.34835
+"Livry-Gargan","France",39518,48.9193,2.54305
+"Epinal","France",39518,48.1832,6.45304
+"Saint-Ouen","France",39353,48.9065,2.33339
+"Reze","France",39248,47.1906,-1.56885
+"Montigny-le-Bretonneux","France",39063,48.7664,2.03405
+"Noisy-le-Sec","France",38955,48.8915,2.46451
+"Melun","France",38953,48.5457,2.65356
+"Bagneux","France",38900,48.7957,2.30796
+"Massy","France",38768,48.7269,2.28301
+"Haguenau","France",38721,48.8156,7.79051
+"Montrouge","France",38708,48.8162,2.31393
+"Marcq-en-Baroeul","France",38629,50.6667,3.08333
+"Vitrolles","France",38591,43.46,5.24861
+"Draguignan","France",38573,43.5369,6.46458
+"Lens","France",38265,50.433,2.82791
+"Gagny","France",38134,48.8833,2.53333
+"Saint-Chamond","France",38014,45.4759,4.51294
+"Bron","France",37825,45.7387,4.91303
+"Vaulx-en-Velin","France",37489,45.7869,4.9251
+"Joue-les-Tours","France",37466,47.3491,0.66513
+"Alfortville","France",37290,48.8058,2.4204
+"La Courneuve","France",37287,48.9281,2.39627
+"Chatellerault","France",37210,46.8171,0.54518
+"Villepinte","France",37114,48.962,2.53253
+"Cambrai","France",36492,50.176,3.23472
+"Poissy","France",36431,48.929,2.04952
+"Conflans-Sainte-Honorine","France",36358,49.0016,2.09694
+"Mont-de-Marsan","France",36205,43.8902,-0.49713
+"Plaisir","France",36121,48.8232,1.9541
+"Marseille 07","France",35981,43.2829,5.36021
+"Marignane","France",35873,43.4173,5.21462
+"Dieppe","France",35707,49.9216,1.07772
+"Montelimar","France",35637,44.5547,4.75469
+"Tremblay-en-France","France",35591,48.9496,2.5684
+"Choisy-le-Roi","France",35590,48.7685,2.41874
+"Saint-Martin-d'Heres","France",35528,45.1787,5.76281
+"Macon","France",35484,46.3141,4.82823
+"Romans-sur-Isere","France",35002,45.0496,5.06602
+"Saint-Raphael","France",34918,43.4233,6.7735
+"Pontault-Combault","France",34798,48.7981,2.60676
+"Six-Fours-les-Plages","France",34779,43.0917,5.82465
+"Perigueux","France",34770,45.1869,0.71439
+"Aurillac","France",34724,44.9254,2.43983
+"Neuilly-sur-Marne","France",34465,48.8537,2.54903
+"Lievin","France",34370,50.4198,2.78068
+"Agen","France",34367,44.202,0.62055
+"Franconville","France",34284,48.9833,2.23333
+"Sainte-Genevieve-des-Bois","France",33689,48.6468,2.31965
+"Maubeuge","France",33684,50.2788,3.97267
+"Bagnolet","France",33504,48.8667,2.41667
+"Saumur","France",33229,47.2593,-0.07808
+"Biarritz","France",33188,43.4805,-1.55684
+"La Ciotat","France",33113,43.1748,5.60449
+"Echirolles","France",33088,45.146,5.71441
+"Villefranche-sur-Saone","France",32994,45.9897,4.71961
+"Chatenay-Malabry","France",32715,48.7651,2.26655
+"Stains","France",32601,48.95,2.38333
+"Chatillon","France",32383,48.8024,2.29346
+"Vienne","France",32293,45.5257,4.87484
+"Schiltigheim","France",32289,48.6075,7.74931
+"Les Mureaux","France",32134,48.9917,1.90972
+"Le Perreux-sur-Marne","France",32015,48.85,2.5
+"Guyancourt","France",31989,48.7733,2.07393
+"Palaiseau","France",31987,48.7183,2.2498
+"Saint-Dizier","France",31918,48.6377,4.94892
+"Creil","France",31863,49.2567,2.48477
+"Vandoeuvre-les-Nancy","France",31785,48.6612,6.17114
+"Thonon-les-Bains","France",31684,46.3705,6.47985
+"Bethune","France",31568,50.5297,2.64003
+"Colomiers","France",31363,43.6106,1.33467
+"Nogent-sur-Marne","France",31236,48.8367,2.48255
+"Athis-Mons","France",31225,48.7052,2.39147
+"Viry-Chatillon","France",31131,48.6721,2.39318
+"Houilles","France",31121,48.9216,2.19263
+"Soissons","France",31100,49.3817,3.32361
+"Dreux","France",31058,48.7365,1.36566
+"Charenton-le-Pont","France",30910,48.8221,2.41217
+"Villeneuve-Saint-Georges","France",30881,48.7322,2.44925
+"Elancourt","France",30831,48.7842,1.9552
+"Alencon","France",30786,48.4348,0.09311
+"Sotteville-les-Rouen","France",30619,49.4097,1.09005
+"Orange","France",30530,44.1381,4.81025
+"Villenave-d'Ornon","France",30347,44.7794,-0.56707
+"Pontoise","France",30290,49.05,2.1
+"Villiers-sur-Marne","France",30252,48.831,2.54844
+"Chatou","France",30091,48.8898,2.15863
+"Goussainville","France",30047,49.0137,2.46595
+"Lomme","France",29892,50.6436,2.98715
+"Vierzon","France",29876,47.2219,2.0684
+"Saint-Medard-en-Jalles","France",29742,44.8955,-0.71779
+"Thiais","France",29724,48.765,2.3961
+"Carpentras","France",29709,44.0551,5.04813
+"L'Hay-les-Roses","France",29703,48.7794,2.33729
+"Menton","France",29649,43.7765,7.50435
+"Saint-Laurent-du-Var","France",29516,43.6732,7.19
+"Saintes","France",29512,45.7474,-0.63489
+"Rochefort","France",29427,45.943,-0.96774
+"Malakoff","France",29420,48.82,2.29998
+"Draveil","France",29316,48.6847,2.41418
+"Saint-Leu","France",29278,46.7306,4.50083
+"Saint-Sebastien-sur-Loire","France",29238,47.2077,-1.50332
+"Le Chesnay","France",29154,48.8222,2.12213
+"Tournefeuille","France",29124,43.5887,1.31922
+"Clichy-sous-Bois","France",29062,48.9102,2.55323
+"Chaumont","France",28981,48.1112,5.14134
+"Saint-Etienne-du-Rouvray","France",28953,49.3779,1.10467
+"Meyzieu","France",28929,45.7664,5.00277
+"Yerres","France",28897,48.7178,2.49338
+"Montbeliard","France",28865,47.5096,6.79823
+"Saint-Cloud","France",28839,48.846,2.20289
+"Sens","France",28700,48.1974,3.28328
+"Laon","France",28688,49.5631,3.62714
+"Lambersart","France",28613,50.65,3.03333
+"Trappes","France",28367,48.7741,2.01781
+"Rodez","France",28337,44.3526,2.57338
+"Bergerac","France",28317,44.8516,0.48171
+"Annemasse","France",28275,46.1944,6.23775
+"La Garde","France",28257,43.1247,6.01033
+"Ermont","France",28117,48.99,2.25804
+"Rillieux-la-Pape","France",28076,45.8167,4.9
+"Villemomble","France",28001,48.8833,2.5
+"Pierrefitte-sur-Seine","France",27914,48.9669,2.36104
+"Le Kremlin-Bicetre","France",27867,48.8147,2.36073
+"Champs-sur-Marne","France",27776,48.85,2.6
+"Aix-les-Bains","France",27651,45.6917,5.90863
+"Bezons","France",27570,48.9243,2.2128
+"Vallauris","France",27286,43.578,7.05451
+"Taverny","France",27271,49.0254,2.21691
+"Illkirch-Graffenstaden","France",27261,48.5289,7.71523
+"La Teste-de-Buch","France",27253,44.6328,-1.14513
+"Epernay","France",27082,49.04,3.95922
+"Villiers-le-Bel","France",27028,49.0088,2.39819
+"Vichy","France",27019,46.1271,3.42577
+"Sannois","France",26869,48.9667,2.25
+"Gonesse","France",26758,48.9869,2.44892
+"Vigneux-sur-Seine","France",26692,48.7029,2.41357
+"Cavaillon","France",26689,43.8312,5.03586
+"Rambouillet","France",26674,48.6437,1.82992
+"Cherbourg-Octeville","France",26655,49.6398,-1.61636
+"Armentieres","France",26646,50.6857,2.88214
+"Lunel","France",26588,43.6778,4.13611
+"Cachan","France",26540,48.7963,2.33661
+"Le Grand-Quevilly","France",26522,49.4008,1.04582
+"Abbeville","France",26461,50.1052,1.83547
+"La Garenne-Colombes","France",26385,48.9047,2.2469
+"Montigny-les-Metz","France",26369,49.0956,6.15271
+"Vanves","France",26068,48.8234,2.29025
+"Vernon","France",26037,49.0929,1.46332
+"Savigny-le-Temple","France",25925,48.5741,2.58287
+"Dole","France",25878,47.0923,5.48966
+"Villeneuve-sur-Lot","France",25869,44.4085,0.70415
+"Les Ulis","France",25785,48.6817,2.16944
+"Marseille 02","France",25779,43.2966,5.37034
+"Oyonnax","France",25697,46.2592,5.65727
+"Oullins","France",25592,45.714,4.80755
+"Le Creusot","France",25590,46.8071,4.41632
+"Henin-Beaumont","France",25371,50.4136,2.96485
+"Orvault","France",25338,47.2712,-1.62361
+"Coudekerque-Branche","France",25201,51.0229,2.39359
+"Herblay","France",25153,48.9899,2.1699
+"Ris-Orangis","France",25082,48.6511,2.41406
+"Sucy-en-Brie","France",25014,48.7687,2.53474
+"Grigny","France",24940,48.6541,2.39343
+"Fresnes","France",24803,48.7557,2.32241
+"Romainville","France",24772,48.8854,2.43482
+"Fontenay-aux-Roses","France",24680,48.7933,2.29275
+"Decines-Charpieu","France",24674,45.7687,4.95883
+"Saint-Die-des-Vosges","France",24628,48.2843,6.94921
+"Fontaine","France",24588,45.1927,5.68821
+"Auch","France",24494,43.6456,0.58856
+"Bruay-la-Buissiere","France",24474,50.4833,2.55
+"Lisieux","France",24473,49.1466,0.22925
+"Sarreguemines","France",24446,49.11,7.06747
+"Torcy","France",24386,48.8506,2.65078
+"Gradignan","France",24385,44.7736,-0.61395
+"Lanester","France",24352,47.7632,-3.3393
+"Bretigny-sur-Orge","France",24317,48.6114,2.30593
+"Muret","France",24313,43.46,1.32541
+"Bois-Colombes","France",24300,48.9194,2.27485
+"Blagnac","France",24263,43.6367,1.38971
+"Herouville-Saint-Clair","France",24258,49.2109,-0.30653
+"Libourne","France",24240,44.9145,-0.24186
+"Le Bouscat","France",24232,44.8649,-0.59864
+"Miramas","France",24173,43.5851,5.00268
+"Beaune","France",24162,47.0241,4.83887
+"Eaubonne","France",24096,48.9971,2.28249
+"Brunoy","France",24096,48.6942,2.49223
+"Villeparisis","France",23931,48.9421,2.61463
+"Montfermeil","France",23829,48.8982,2.57913
+"Sevres","France",23724,48.8229,2.21757
+"Fougeres","France",23719,48.3516,-1.19961
+"Saint-Pol-sur-Mer","France",23635,51.0312,2.33983
+"La Madeleine","France",23572,50.646,3.07585
+"Gif-sur-Yvette","France",23541,48.6833,2.13333
+"Bourgoin-Jallieu","France",23517,45.5861,5.27361
+"Begles","France",23504,44.8076,-0.55144
+"Cahors","France",23331,44.4491,1.43663
+"Millau","France",23307,44.0997,3.07848
+"Hazebrouck","France",23307,50.7237,2.53729
+"Grande-Synthe","France",23213,51.0154,2.29975
+"La Valette-du-Var","France",23134,43.1376,5.98317
+"Moulins","France",23095,46.5646,3.33243
+"Mont-Saint-Aignan","France",23078,49.4631,1.09364
+"Etampes","France",23012,48.4351,2.16233
+"Mons-en-Baroeul","France",23006,50.6333,3.11667
+"Agde","France",23001,43.3108,3.47583
+"Saint-Ouen-l'Aumone","France",22977,49.0435,2.12134
+"Vertou","France",22921,47.1688,-1.4729
+"Montgeron","France",22843,48.7054,2.45039
+"Maisons-Laffitte","France",22772,48.9526,2.14521
+"Le Puy-en-Velay","France",22718,45.0437,3.88523
+"Le Petit-Quevilly","France",22691,49.4134,1.06155
+"Lormont","France",22636,44.8765,-0.51919
+"Olivet","France",22604,47.8622,1.8991
+"Acheres","France",22555,48.9612,2.06882
+"Ozoir-la-Ferriere","France",22530,48.767,2.66871
