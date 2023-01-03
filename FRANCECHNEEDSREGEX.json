@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Map of France",
+    "subtitle": [
+      "The tooltip now includes the province name and relevant population",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "config": {"background": "white", "view": {"stroke": "trasparent"}},
+  "width": 500,
+  "height": 500,
+  "data": {
+    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/frankreich.geojson",
+    "format": {"property": "features"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.name",
+      "from": {
+        "key": "city",
+        "fields": ["city", "pop23"],
+        "data": {
+          "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/FRONKCHOROPLETH.json"
+        }
+      }
+    },
+    {
+      "calculate": "toNumber(replace(replace(datum.pop23,'.',''),'.',''))",
+      "as": "pop23"
+    }
+  ],
+  "projection": {"type": "mercator"},
+  "mark": {
+    "type": "geoshape",
+    "fill": "#807dba",
+    "stroke": "rgb(250, 250, 250)",
+    "strokeWidth": 0.5
+  },
+  "encoding": {
+    "tooltip": [
+      {"field": "city"},
+      {"field": "pop23", "title": "Population"}
+    ],
+    "fill": {
+      "field": "pop23",
+      "type": "quantitative",
+      "scale": {
+        "domain": [0, 2200000, 4400000, 6600000, 8800000, 10000000, 12000000],
+        "range": [
+          "##ffffff",
+          "#f2e3f1",
+          "#dec8d0",
+          "#e891b8",
+          "#db6292",
+          "#b42566",
+          "#7a2352",
+          "#54278f",
+          "#3f007d"
+        ]
+      },
+      "legend": {"title": "Population of city", "orient": "right"}
+    }
+  }
+}
