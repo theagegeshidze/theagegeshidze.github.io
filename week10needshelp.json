@@ -1,0 +1,176 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Percentage Changes in Annual GDP across the Big 4: Italy, Germany, France and the UK",
+  "background": "white",
+  "padding": 10,
+  "height": 400,
+  "style": "cell",
+  "data": [
+    {
+      "name": "source_0",
+      "values": [{
+        "Date": "Apr 2021", "Percentage": 100.0, "Category": "Lowest cost grocery items"}, {"Date": "May 2021", "Percentage": 100.2, "Category": "Lowest cost grocery items"}, {"Date": "Jun 2021", "Percentage": 99.7, "Category": "Lowest cost grocery items"}, {"Date": "Jul 2021", "Percentage": 100.0, "Category": "Lowest cost grocery items"}, {"Date": "Aug 2021", "Percentage": 100.9, "Category": "Lowest cost grocery items"}, {"Date": "Sep 2021", "Percentage": 99.5, "Category": "Lowest cost grocery items"}, {"Date": "Oct 2021", "Percentage": 103.4, "Category": "Lowest cost grocery items"}, {"Date": "Nov 2021", "Percentage": 103.2, "Category": "Lowest cost grocery items"}, {"Date": "Dec 2021", "Percentage": 104.9, "Category": "Lowest cost grocery items"}, {"Date": "Jan 2022", "Percentage": 105.6, "Category": "Lowest cost grocery items"}, {"Date": "Feb 2022", "Percentage": 105.5, "Category": "Lowest cost grocery items"}, {"Date": "Mar 2022", "Percentage": 106.0, "Category": "Lowest cost grocery items"}, {"Date": "Apr 2022", "Percentage": 106.9, "Category": "Lowest cost grocery items"}, {"Date": "May 2022", "Percentage": 108.0, "Category": "Lowest cost grocery items"}, {"Date": "Jun 2022", "Percentage": 109.6, "Category": "Lowest cost grocery items"}, {"Date": "Jul 2022", "Percentage": 111.5, "Category": "Lowest cost grocery items"}, {"Date": "Aug 2022", "Percentage": 113.1, "Category": "Lowest cost grocery items"}, {"Date": "Sep 2022", "Percentage": 116.7, "Category": "Lowest cost grocery items"}, {"Date": "Apr 2021", "Percentage": 100.0, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "May 2021", "Percentage": 99.7, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Jun 2021", "Percentage": 99.9, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Jul 2021", "Percentage": 99.6, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Aug 2021", "Percentage": 100.6, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Sep 2021", "Percentage": 100.4, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Oct 2021", "Percentage": 100.9, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Nov 2021", "Percentage": 101.9, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Dec 2021", "Percentage": 103.2, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Jan 2022", "Percentage": 103.9, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Feb 2022", "Percentage": 104.9, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Mar 2022", "Percentage": 105.1, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Apr 2022", "Percentage": 106.7, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "May 2022", "Percentage": 108.3, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Jun 2022", "Percentage": 109.7, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Jul 2022", "Percentage": 112.2, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Aug 2022", "Percentage": 113.8, "Category": "CPIH (Food and non-alcoholic beverages)"}, {"Date": "Sep 2022", "Percentage": 115.1, "Category": "CPIH (Food and non-alcoholic beverages)"}]
+  
+    },
+    {
+      "name": "data_0",
+      "source": "source_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Percentage\"]) && isFinite(+datum[\"Percentage\"])"
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {"name": "x_step", "value": 40},
+    {
+      "name": "width",
+      "update": "bandspace(domain('x').length, 1, 0.5) * x_step"
+    }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_pathgroup",
+      "type": "group",
+      "from": {
+        "facet": {
+          "name": "faceted_path_layer_0_main",
+          "data": "source_0",
+          "groupby": ["Category"]
+        }
+      },
+      "encode": {
+        "update": {
+          "width": {"field": {"group": "width"}},
+          "height": {"field": {"group": "height"}}
+        }
+      },
+      "marks": [
+        {
+          "name": "layer_0_marks",
+          "type": "line",
+          "style": ["line"],
+          "sort": {"field": "datum[\"Date\"]"},
+          "from": {"data": "faceted_path_layer_0_main"},
+          "encode": {
+            "update": {
+              "stroke": {"scale": "color", "field": "Category"},
+              "description": {
+                "signal": "\"Date: \" + (isValid(datum[\"Date\"]) ? datum[\"Date\"] : \"\"+datum[\"Date\"]) + \"; Percentage: \" + (format(datum[\"Percentage\"], \"\")) + \"; Category: \" + (isValid(datum[\"Category\"]) ? datum[\"Category\"] : \"\"+datum[\"Category\"])"
+              },
+              "x": {"scale": "x", "field": "Date"},
+              "y": {"scale": "y", "field": "Percentage"},
+              "defined": {
+                "signal": "isValid(datum[\"Percentage\"]) && isFinite(+datum[\" Percentage\"])"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "layer_1_marks",
+      "type": "symbol",
+      "style": ["point"],
+      "from": {"data": "data_0"},
+      "encode": {
+        "update": {
+          "opacity": {"value": 1},
+          "fill": {"scale": "color", "field": "Category"},
+          "ariaRoleDescription": {"value": "point"},
+          "description": {
+            "signal": "\"Date: \" + (isValid(datum[\"Date\"]) ? datum[\"Date\"] : \"\"+datum[\"Date\"]) + \"; Date \" + (format(datum[\"Date\"], \"\")) + \"; Category: \" + (isValid(datum[\"Category\"]) ? datum[\"Category\"] : \"\"+datum[\"Category\"])"
+          },
+          "x": {"scale": "x", "field": "Date"},
+          "y": {"scale": "y", "field": "Category"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "point",
+      "domain": {
+        "fields": [
+          {"data": "source_0", "field": "Date"},
+          {"data": "data_0", "field": "Date"}
+        ],
+        "sort": true
+      },
+      "range": {"step": {"signal": "x_step"}},
+      "padding": 0.5
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "fields": [
+          {"data": "source_0", "field": "Percentage"},
+          {"data": "data_0", "field": "Percentage"}
+        ]
+      },
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {
+        "fields": [
+          {"data": "source_0", "field": "Category"},
+          {"data": "data_0", "field": "Category"}
+        ],
+        "sort": true
+      },
+      "range": "category"
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "title": "Date",
+      "labelAlign": "right",
+      "labelAngle": 270,
+      "labelBaseline": "middle",
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "Percentage",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ],
+  "legends": [
+    {
+      "stroke": "color",
+      "symbolType": "circle",
+      "title": "Category",
+      "fill": "color",
+      "encode": {"symbols": {"update": {"opacity": {"value": 1}}}}
+    }
+  ]
+}
