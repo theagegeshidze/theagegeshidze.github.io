@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
-    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/death.csv"
+    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/data_death.csv"
   },
   "mark": "bar",
   "width": "400",
