@@ -15,7 +15,7 @@
   "width": 500,
   "height": 500,
   "data": {
-    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/frankreich.geojson",
+    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/francegeo.geojson",
     "format": {"property": "features"}
   },
   "transform": [
@@ -25,7 +25,7 @@
         "key": "city",
         "fields": ["city", "pop23"],
         "data": {
-          "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/FRONKCHOROPLETH.json"
+          "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/Francechoropleth.json"
         }
       }
     },
