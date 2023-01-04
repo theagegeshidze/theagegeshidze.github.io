@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "This chart shows the change in the main components of electricity in the UK. Data was downloaded from https://ourworldindata.org/electricity-mix.",
   "title": {
-    "text": "UK Electricity Sources 1985 - 2020 (%)",
-    "subtitle": "Total percentage by fuel source, Source: ourworldindata.org",
+    "text": "Global Carbon Emissions",
+    "subtitle": "Total carbon emissions from 1750-2021 by entity, Source: ourworldindata.org",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
@@ -13,29 +13,29 @@
     "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/project1.csv"
   },
   "height": 300,
-  "width": 700,
+  "width": 800,
   "background": null,
   "config": {"style": {"cell": {"stroke": "transparent"}}},
   "mark": "line",
   "selection": {
     "Type": {
       "type": "single",
-      "fields": ["Type"],
+      "fields": ["Entity"],
       "bind": {
         "input": "select",
         "options": [
           null,
-          "Africa ",
-          "Asia (excl. China and India) ",
-          "China ",
-          "Europe (excl. EU-27) ",
-          "European Union (27) ",
-          "India ",
-          "North America (excl. USA) ",
-          "South America ",
-          "United States "
+          "Africa",
+          "Asia (excl. China and India)",
+          "China",
+          "Europe (excl. EU-27)",
+          "European Union (27)",
+          "India",
+          "North America (excl. USA)",
+          "South America",
+          "United States"
         ],
-        "name": "Country/Group Selector"
+        "name": "Selector"
       }
     }
   },
@@ -69,8 +69,12 @@
         "timeUnit": "year",
         "title": "Year"
       },
-      {"field": "Metric tonnes", "type": "quantitative", "title": "Annual Emissions"},
-      {"field": "Type", "type": "nominal", "title": "Fuel Type"}
+      {
+        "field": "Annual CO2 Emissions",
+        "type": "quantitative",
+        "title": "Annual Emissions"
+      },
+      {"field": "Entity", "type": "nominal", "title": "Entity"}
     ]
   }
 }
