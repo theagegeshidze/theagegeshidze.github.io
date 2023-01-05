@@ -19,7 +19,7 @@
   "mark": {"type": "line", "interpolate": "monotone", "point": true},
   "encoding": {
     "x": {"field": "Date", "type": "ordinal", "title": null},
-    "y": {"field": "Percentage", "type": "quantitative", "title":null},
+    "y": {"field": "Percentage", "type": "quantitative", "title": null,"scale":{"domain":[90, 120]},},
     "color": {
       "legend": {"title": "Category", "orient": "bottom-right"},
       "field": "Category",
