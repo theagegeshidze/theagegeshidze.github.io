@@ -1,6 +1,10 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-   "title": {
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 600,
+  "height": 340,
+  "title": {
     "text": "Annual GDP in the Big 4",
     "color": "#FE8FE9",
     "fontSize": 14,
@@ -9,625 +13,1159 @@
     "anchor": "start",
     "subtitle": "% change in Annual GDP for Germany, Italy, France and the United Kingdom ",
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 11,
+    "subtitleFontSize": 11
   },
-  "width": 600,
-  "height": 340,
-  "data": {
-    "values": [
-      {
-        "Year": 1972,
-        "Annual GDP Growth (%)": 4.300341334,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1973,
-        "Annual GDP Growth (%)": 4.777486892,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1974,
-        "Annual GDP Growth (%)": 0.890068741,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1975,
-        "Annual GDP Growth (%)": -0.866738894,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1976,
-        "Annual GDP Growth (%)": 4.949258377,
-        "Country": "Germany"
-      },
-      {"Year": 1977, "Annual GDP Growth (%)": 3.34721812, "Country": "Germany"},
-      {
-        "Year": 1978,
-        "Annual GDP Growth (%)": 3.008492857,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1979,
-        "Annual GDP Growth (%)": 4.150363341,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1980,
-        "Annual GDP Growth (%)": 1.408828636,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1981,
-        "Annual GDP Growth (%)": 0.529240557,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1982,
-        "Annual GDP Growth (%)": -0.394840775,
-        "Country": "Germany"
-      },
-      {"Year": 1983, "Annual GDP Growth (%)": 1.57241017, "Country": "Germany"},
-      {"Year": 1984, "Annual GDP Growth (%)": 2.82294781, "Country": "Germany"},
-      {
-        "Year": 1985,
-        "Annual GDP Growth (%)": 2.327935262,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1986,
-        "Annual GDP Growth (%)": 2.287339221,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1987,
-        "Annual GDP Growth (%)": 1.402151627,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1988,
-        "Annual GDP Growth (%)": 3.707235659,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1989,
-        "Annual GDP Growth (%)": 3.896551692,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1990,
-        "Annual GDP Growth (%)": 5.255006083,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1991,
-        "Annual GDP Growth (%)": 5.108261522,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1992,
-        "Annual GDP Growth (%)": 1.923076559,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1993,
-        "Annual GDP Growth (%)": -0.976849818,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1994,
-        "Annual GDP Growth (%)": 2.391892071,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1995,
-        "Annual GDP Growth (%)": 1.544146496,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1996,
-        "Annual GDP Growth (%)": 0.805822891,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1997,
-        "Annual GDP Growth (%)": 1.792160821,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1998,
-        "Annual GDP Growth (%)": 2.013932785,
-        "Country": "Germany"
-      },
-      {
-        "Year": 1999,
-        "Annual GDP Growth (%)": 1.887261154,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2000,
-        "Annual GDP Growth (%)": 2.912502964,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2001,
-        "Annual GDP Growth (%)": 1.681468481,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2002,
-        "Annual GDP Growth (%)": -0.197973835,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2003,
-        "Annual GDP Growth (%)": -0.700116686,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2004,
-        "Annual GDP Growth (%)": 1.175088132,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2005,
-        "Annual GDP Growth (%)": 0.731707164,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2006,
-        "Annual GDP Growth (%)": 3.816441913,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2007,
-        "Annual GDP Growth (%)": 2.976455131,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2008,
-        "Annual GDP Growth (%)": 0.959879134,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2009,
-        "Annual GDP Growth (%)": -5.693836336,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2010,
-        "Annual GDP Growth (%)": 4.179882499,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2011,
-        "Annual GDP Growth (%)": 3.925192705,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2012,
-        "Annual GDP Growth (%)": 0.418497594,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2013,
-        "Annual GDP Growth (%)": 0.437591303,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2014,
-        "Annual GDP Growth (%)": 2.209543431,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2015,
-        "Annual GDP Growth (%)": 1.491931528,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2016,
-        "Annual GDP Growth (%)": 2.229999868,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2017,
-        "Annual GDP Growth (%)": 2.680231114,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2018,
-        "Annual GDP Growth (%)": 1.086024514,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2019,
-        "Annual GDP Growth (%)": 1.055508247,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2020,
-        "Annual GDP Growth (%)": -4.569616717,
-        "Country": "Germany"
-      },
-      {
-        "Year": 2021,
-        "Annual GDP Growth (%)": 2.892602433,
-        "Country": "Germany"
-      },
-      {"Year": 1972, "Annual GDP Growth (%)": 4.511374019, "Country": "France"},
-      {"Year": 1973, "Annual GDP Growth (%)": 6.344580675, "Country": "France"},
-      {"Year": 1974, "Annual GDP Growth (%)": 4.300919143, "Country": "France"},
-      {
-        "Year": 1975,
-        "Annual GDP Growth (%)": -0.959884746,
-        "Country": "France"
-      },
-      {"Year": 1976, "Annual GDP Growth (%)": 4.356758903, "Country": "France"},
-      {"Year": 1977, "Annual GDP Growth (%)": 3.464312004, "Country": "France"},
-      {"Year": 1978, "Annual GDP Growth (%)": 3.978543722, "Country": "France"},
-      {"Year": 1979, "Annual GDP Growth (%)": 3.549989157, "Country": "France"},
-      {"Year": 1980, "Annual GDP Growth (%)": 1.57874526, "Country": "France"},
-      {"Year": 1981, "Annual GDP Growth (%)": 1.069019839, "Country": "France"},
-      {"Year": 1982, "Annual GDP Growth (%)": 2.505396616, "Country": "France"},
-      {"Year": 1983, "Annual GDP Growth (%)": 1.240864862, "Country": "France"},
-      {"Year": 1984, "Annual GDP Growth (%)": 1.513721603, "Country": "France"},
-      {"Year": 1985, "Annual GDP Growth (%)": 1.622781367, "Country": "France"},
-      {"Year": 1986, "Annual GDP Growth (%)": 2.33727635, "Country": "France"},
-      {"Year": 1987, "Annual GDP Growth (%)": 2.561900335, "Country": "France"},
-      {"Year": 1988, "Annual GDP Growth (%)": 4.743142194, "Country": "France"},
-      {"Year": 1989, "Annual GDP Growth (%)": 4.343861063, "Country": "France"},
-      {"Year": 1990, "Annual GDP Growth (%)": 2.923935081, "Country": "France"},
-      {"Year": 1991, "Annual GDP Growth (%)": 1.048175847, "Country": "France"},
-      {"Year": 1992, "Annual GDP Growth (%)": 1.599342677, "Country": "France"},
-      {
-        "Year": 1993,
-        "Annual GDP Growth (%)": -0.628666352,
-        "Country": "France"
-      },
-      {"Year": 1994, "Annual GDP Growth (%)": 2.358342181, "Country": "France"},
-      {"Year": 1995, "Annual GDP Growth (%)": 2.106695253, "Country": "France"},
-      {"Year": 1996, "Annual GDP Growth (%)": 1.412993673, "Country": "France"},
-      {"Year": 1997, "Annual GDP Growth (%)": 2.336296529, "Country": "France"},
-      {"Year": 1998, "Annual GDP Growth (%)": 3.588659425, "Country": "France"},
-      {"Year": 1999, "Annual GDP Growth (%)": 3.421373799, "Country": "France"},
-      {"Year": 2000, "Annual GDP Growth (%)": 3.923669227, "Country": "France"},
-      {"Year": 2001, "Annual GDP Growth (%)": 1.983721419, "Country": "France"},
-      {"Year": 2002, "Annual GDP Growth (%)": 1.135531482, "Country": "France"},
-      {"Year": 2003, "Annual GDP Growth (%)": 0.823160757, "Country": "France"},
-      {"Year": 2004, "Annual GDP Growth (%)": 2.829752929, "Country": "France"},
-      {"Year": 2005, "Annual GDP Growth (%)": 1.66321998, "Country": "France"},
-      {"Year": 2006, "Annual GDP Growth (%)": 2.449323601, "Country": "France"},
-      {"Year": 2007, "Annual GDP Growth (%)": 2.424736243, "Country": "France"},
-      {"Year": 2008, "Annual GDP Growth (%)": 0.25494596, "Country": "France"},
-      {
-        "Year": 2009,
-        "Annual GDP Growth (%)": -2.873313828,
-        "Country": "France"
-      },
-      {"Year": 2010, "Annual GDP Growth (%)": 1.949437623, "Country": "France"},
-      {"Year": 2011, "Annual GDP Growth (%)": 2.192700633, "Country": "France"},
-      {"Year": 2012, "Annual GDP Growth (%)": 0.313134751, "Country": "France"},
-      {"Year": 2013, "Annual GDP Growth (%)": 0.576326675, "Country": "France"},
-      {"Year": 2014, "Annual GDP Growth (%)": 0.956183052, "Country": "France"},
-      {"Year": 2015, "Annual GDP Growth (%)": 1.112912341, "Country": "France"},
-      {"Year": 2016, "Annual GDP Growth (%)": 1.095464404, "Country": "France"},
-      {"Year": 2017, "Annual GDP Growth (%)": 2.291419994, "Country": "France"},
-      {"Year": 2018, "Annual GDP Growth (%)": 1.865066071, "Country": "France"},
-      {"Year": 2019, "Annual GDP Growth (%)": 1.842971814, "Country": "France"},
-      {
-        "Year": 2020,
-        "Annual GDP Growth (%)": -7.855256037,
-        "Country": "France"
-      },
-      {"Year": 2021, "Annual GDP Growth (%)": 6.963570788, "Country": "France"},
-      {
-        "Year": 1972,
-        "Annual GDP Growth (%)": 4.321667667,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1973,
-        "Annual GDP Growth (%)": 6.523848445,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1974,
-        "Annual GDP Growth (%)": -2.484404003,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1975,
-        "Annual GDP Growth (%)": -1.47364947,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1976,
-        "Annual GDP Growth (%)": 2.910266178,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1977,
-        "Annual GDP Growth (%)": 2.45775046,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1978,
-        "Annual GDP Growth (%)": 4.204260549,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1979,
-        "Annual GDP Growth (%)": 3.74901651,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1980,
-        "Annual GDP Growth (%)": -2.031367788,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1981,
-        "Annual GDP Growth (%)": -0.787743816,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1982,
-        "Annual GDP Growth (%)": 1.994891312,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1983,
-        "Annual GDP Growth (%)": 4.221856277,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1984,
-        "Annual GDP Growth (%)": 2.269105178,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1985,
-        "Annual GDP Growth (%)": 4.147414998,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1986,
-        "Annual GDP Growth (%)": 3.150340543,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1987,
-        "Annual GDP Growth (%)": 5.392738307,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1988,
-        "Annual GDP Growth (%)": 5.732413722,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1989,
-        "Annual GDP Growth (%)": 2.577602692,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1990,
-        "Annual GDP Growth (%)": 0.73375552,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1991,
-        "Annual GDP Growth (%)": -1.103121662,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1992,
-        "Annual GDP Growth (%)": 0.401082076,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1993,
-        "Annual GDP Growth (%)": 2.489830985,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1994,
-        "Annual GDP Growth (%)": 3.846009168,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1995,
-        "Annual GDP Growth (%)": 2.531670005,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1996,
-        "Annual GDP Growth (%)": 2.428542895,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1997,
-        "Annual GDP Growth (%)": 4.90902574,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1998,
-        "Annual GDP Growth (%)": 3.153973375,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 1999,
-        "Annual GDP Growth (%)": 2.990111445,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2000,
-        "Annual GDP Growth (%)": 3.672369105,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2001,
-        "Annual GDP Growth (%)": 2.072656279,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2002,
-        "Annual GDP Growth (%)": 2.123222773,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2003,
-        "Annual GDP Growth (%)": 3.029889927,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2004,
-        "Annual GDP Growth (%)": 2.355629762,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2005,
-        "Annual GDP Growth (%)": 2.59328001,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2006,
-        "Annual GDP Growth (%)": 2.584104677,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2007,
-        "Annual GDP Growth (%)": 2.269486875,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2008,
-        "Annual GDP Growth (%)": -0.239638085,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2009,
-        "Annual GDP Growth (%)": -4.247356266,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2010,
-        "Annual GDP Growth (%)": 2.131438198,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2011,
-        "Annual GDP Growth (%)": 1.457563391,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2012,
-        "Annual GDP Growth (%)": 1.469887521,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2013,
-        "Annual GDP Growth (%)": 1.890018342,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2014,
-        "Annual GDP Growth (%)": 2.991164814,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2015,
-        "Annual GDP Growth (%)": 2.622596679,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2016,
-        "Annual GDP Growth (%)": 2.263463538,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2017,
-        "Annual GDP Growth (%)": 2.134453093,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2018,
-        "Annual GDP Growth (%)": 1.650925496,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2019,
-        "Annual GDP Growth (%)": 1.671944197,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2020,
-        "Annual GDP Growth (%)": -9.270410835,
-        "Country": "United Kingdom"
-      },
-      {
-        "Year": 2021,
-        "Annual GDP Growth (%)": 7.441273093,
-        "Country": "United Kingdom"
-      },
-      {"Year": 1972, "Annual GDP Growth (%)": 3.690485825, "Country": "Italy"},
-      {"Year": 1973, "Annual GDP Growth (%)": 7.125862304, "Country": "Italy"},
-      {"Year": 1974, "Annual GDP Growth (%)": 5.500141101, "Country": "Italy"},
-      {"Year": 1975, "Annual GDP Growth (%)": -2.090162915, "Country": "Italy"},
-      {"Year": 1976, "Annual GDP Growth (%)": 7.125385137, "Country": "Italy"},
-      {"Year": 1977, "Annual GDP Growth (%)": 2.560500845, "Country": "Italy"},
-      {"Year": 1978, "Annual GDP Growth (%)": 3.240139752, "Country": "Italy"},
-      {"Year": 1979, "Annual GDP Growth (%)": 5.959159426, "Country": "Italy"},
-      {"Year": 1980, "Annual GDP Growth (%)": 3.430016414, "Country": "Italy"},
-      {"Year": 1981, "Annual GDP Growth (%)": 0.844227607, "Country": "Italy"},
-      {"Year": 1982, "Annual GDP Growth (%)": 0.413585695, "Country": "Italy"},
-      {"Year": 1983, "Annual GDP Growth (%)": 1.169203495, "Country": "Italy"},
-      {"Year": 1984, "Annual GDP Growth (%)": 3.225852315, "Country": "Italy"},
-      {"Year": 1985, "Annual GDP Growth (%)": 2.798085767, "Country": "Italy"},
-      {"Year": 1986, "Annual GDP Growth (%)": 2.859971864, "Country": "Italy"},
-      {"Year": 1987, "Annual GDP Growth (%)": 3.191960628, "Country": "Italy"},
-      {"Year": 1988, "Annual GDP Growth (%)": 4.194377308, "Country": "Italy"},
-      {"Year": 1989, "Annual GDP Growth (%)": 3.388383454, "Country": "Italy"},
-      {"Year": 1990, "Annual GDP Growth (%)": 1.985774943, "Country": "Italy"},
-      {"Year": 1991, "Annual GDP Growth (%)": 1.538447558, "Country": "Italy"},
-      {"Year": 1992, "Annual GDP Growth (%)": 0.834275454, "Country": "Italy"},
-      {"Year": 1993, "Annual GDP Growth (%)": -0.852805764, "Country": "Italy"},
-      {"Year": 1994, "Annual GDP Growth (%)": 2.151023638, "Country": "Italy"},
-      {"Year": 1995, "Annual GDP Growth (%)": 2.886836759, "Country": "Italy"},
-      {"Year": 1996, "Annual GDP Growth (%)": 1.266784802, "Country": "Italy"},
-      {"Year": 1997, "Annual GDP Growth (%)": 1.830212234, "Country": "Italy"},
-      {"Year": 1998, "Annual GDP Growth (%)": 1.810615162, "Country": "Italy"},
-      {"Year": 1999, "Annual GDP Growth (%)": 1.625727599, "Country": "Italy"},
-      {"Year": 2000, "Annual GDP Growth (%)": 3.786955143, "Country": "Italy"},
-      {"Year": 2001, "Annual GDP Growth (%)": 1.951371556, "Country": "Italy"},
-      {"Year": 2002, "Annual GDP Growth (%)": 0.253942999, "Country": "Italy"},
-      {"Year": 2003, "Annual GDP Growth (%)": 0.138626891, "Country": "Italy"},
-      {"Year": 2004, "Annual GDP Growth (%)": 1.423594158, "Country": "Italy"},
-      {"Year": 2005, "Annual GDP Growth (%)": 0.817848974, "Country": "Italy"},
-      {"Year": 2006, "Annual GDP Growth (%)": 1.790639681, "Country": "Italy"},
-      {"Year": 2007, "Annual GDP Growth (%)": 1.48707298, "Country": "Italy"},
-      {"Year": 2008, "Annual GDP Growth (%)": -0.962012841, "Country": "Italy"},
-      {"Year": 2009, "Annual GDP Growth (%)": -5.280937208, "Country": "Italy"},
-      {"Year": 2010, "Annual GDP Growth (%)": 1.713295839, "Country": "Italy"},
-      {"Year": 2011, "Annual GDP Growth (%)": 0.707333347, "Country": "Italy"},
-      {"Year": 2012, "Annual GDP Growth (%)": -2.980905768, "Country": "Italy"},
-      {"Year": 2013, "Annual GDP Growth (%)": -1.841065451, "Country": "Italy"},
-      {"Year": 2014, "Annual GDP Growth (%)": -0.004547542, "Country": "Italy"},
-      {"Year": 2015, "Annual GDP Growth (%)": 0.778304351, "Country": "Italy"},
-      {"Year": 2016, "Annual GDP Growth (%)": 1.293462732, "Country": "Italy"},
-      {"Year": 2017, "Annual GDP Growth (%)": 1.667859041, "Country": "Italy"},
-      {"Year": 2018, "Annual GDP Growth (%)": 0.925810941, "Country": "Italy"},
-      {"Year": 2019, "Annual GDP Growth (%)": 0.500233913, "Country": "Italy"},
-      {"Year": 2020, "Annual GDP Growth (%)": -9.025668928, "Country": "Italy"},
-      {"Year": 2021, "Annual GDP Growth (%)": 6.64379019, "Country": "Italy"}
-    ]
-  },
-  "mark": {"type": "line", "point": true},
-  "encoding": {
-    "x": {"field": "Year", "type": "ordinal","title":null},
-    "y": {"field": "Annual GDP Growth (%)", "type": "quantitative","title": null},
-    "color": {
-      "legend": {"title": "Country", "orient": "bottom-right"},
-      "field": "Country",
-      "scale": {"range": ["#B0D6E8", "#DB1BC1","#CCE8B0","#C2B0E8"]}
-  }
-}}
+  "style": "cell",
+  "data": [
+    {
+      "name": "source_0",
+      "values": [
+        {
+          "Year": 1972,
+          "Annual GDP Growth (%)": 4.300341334,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1973,
+          "Annual GDP Growth (%)": 4.777486892,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1974,
+          "Annual GDP Growth (%)": 0.890068741,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1975,
+          "Annual GDP Growth (%)": -0.866738894,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1976,
+          "Annual GDP Growth (%)": 4.949258377,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1977,
+          "Annual GDP Growth (%)": 3.34721812,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1978,
+          "Annual GDP Growth (%)": 3.008492857,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1979,
+          "Annual GDP Growth (%)": 4.150363341,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1980,
+          "Annual GDP Growth (%)": 1.408828636,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1981,
+          "Annual GDP Growth (%)": 0.529240557,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1982,
+          "Annual GDP Growth (%)": -0.394840775,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1983,
+          "Annual GDP Growth (%)": 1.57241017,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1984,
+          "Annual GDP Growth (%)": 2.82294781,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1985,
+          "Annual GDP Growth (%)": 2.327935262,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1986,
+          "Annual GDP Growth (%)": 2.287339221,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1987,
+          "Annual GDP Growth (%)": 1.402151627,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1988,
+          "Annual GDP Growth (%)": 3.707235659,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1989,
+          "Annual GDP Growth (%)": 3.896551692,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1990,
+          "Annual GDP Growth (%)": 5.255006083,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1991,
+          "Annual GDP Growth (%)": 5.108261522,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1992,
+          "Annual GDP Growth (%)": 1.923076559,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1993,
+          "Annual GDP Growth (%)": -0.976849818,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1994,
+          "Annual GDP Growth (%)": 2.391892071,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1995,
+          "Annual GDP Growth (%)": 1.544146496,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1996,
+          "Annual GDP Growth (%)": 0.805822891,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1997,
+          "Annual GDP Growth (%)": 1.792160821,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1998,
+          "Annual GDP Growth (%)": 2.013932785,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1999,
+          "Annual GDP Growth (%)": 1.887261154,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2000,
+          "Annual GDP Growth (%)": 2.912502964,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2001,
+          "Annual GDP Growth (%)": 1.681468481,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2002,
+          "Annual GDP Growth (%)": -0.197973835,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2003,
+          "Annual GDP Growth (%)": -0.700116686,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2004,
+          "Annual GDP Growth (%)": 1.175088132,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2005,
+          "Annual GDP Growth (%)": 0.731707164,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2006,
+          "Annual GDP Growth (%)": 3.816441913,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2007,
+          "Annual GDP Growth (%)": 2.976455131,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2008,
+          "Annual GDP Growth (%)": 0.959879134,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2009,
+          "Annual GDP Growth (%)": -5.693836336,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2010,
+          "Annual GDP Growth (%)": 4.179882499,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2011,
+          "Annual GDP Growth (%)": 3.925192705,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2012,
+          "Annual GDP Growth (%)": 0.418497594,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2013,
+          "Annual GDP Growth (%)": 0.437591303,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2014,
+          "Annual GDP Growth (%)": 2.209543431,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2015,
+          "Annual GDP Growth (%)": 1.491931528,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2016,
+          "Annual GDP Growth (%)": 2.229999868,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2017,
+          "Annual GDP Growth (%)": 2.680231114,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2018,
+          "Annual GDP Growth (%)": 1.086024514,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2019,
+          "Annual GDP Growth (%)": 1.055508247,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2020,
+          "Annual GDP Growth (%)": -4.569616717,
+          "Country": "Germany"
+        },
+        {
+          "Year": 2021,
+          "Annual GDP Growth (%)": 2.892602433,
+          "Country": "Germany"
+        },
+        {
+          "Year": 1972,
+          "Annual GDP Growth (%)": 4.511374019,
+          "Country": "France"
+        },
+        {
+          "Year": 1973,
+          "Annual GDP Growth (%)": 6.344580675,
+          "Country": "France"
+        },
+        {
+          "Year": 1974,
+          "Annual GDP Growth (%)": 4.300919143,
+          "Country": "France"
+        },
+        {
+          "Year": 1975,
+          "Annual GDP Growth (%)": -0.959884746,
+          "Country": "France"
+        },
+        {
+          "Year": 1976,
+          "Annual GDP Growth (%)": 4.356758903,
+          "Country": "France"
+        },
+        {
+          "Year": 1977,
+          "Annual GDP Growth (%)": 3.464312004,
+          "Country": "France"
+        },
+        {
+          "Year": 1978,
+          "Annual GDP Growth (%)": 3.978543722,
+          "Country": "France"
+        },
+        {
+          "Year": 1979,
+          "Annual GDP Growth (%)": 3.549989157,
+          "Country": "France"
+        },
+        {
+          "Year": 1980,
+          "Annual GDP Growth (%)": 1.57874526,
+          "Country": "France"
+        },
+        {
+          "Year": 1981,
+          "Annual GDP Growth (%)": 1.069019839,
+          "Country": "France"
+        },
+        {
+          "Year": 1982,
+          "Annual GDP Growth (%)": 2.505396616,
+          "Country": "France"
+        },
+        {
+          "Year": 1983,
+          "Annual GDP Growth (%)": 1.240864862,
+          "Country": "France"
+        },
+        {
+          "Year": 1984,
+          "Annual GDP Growth (%)": 1.513721603,
+          "Country": "France"
+        },
+        {
+          "Year": 1985,
+          "Annual GDP Growth (%)": 1.622781367,
+          "Country": "France"
+        },
+        {
+          "Year": 1986,
+          "Annual GDP Growth (%)": 2.33727635,
+          "Country": "France"
+        },
+        {
+          "Year": 1987,
+          "Annual GDP Growth (%)": 2.561900335,
+          "Country": "France"
+        },
+        {
+          "Year": 1988,
+          "Annual GDP Growth (%)": 4.743142194,
+          "Country": "France"
+        },
+        {
+          "Year": 1989,
+          "Annual GDP Growth (%)": 4.343861063,
+          "Country": "France"
+        },
+        {
+          "Year": 1990,
+          "Annual GDP Growth (%)": 2.923935081,
+          "Country": "France"
+        },
+        {
+          "Year": 1991,
+          "Annual GDP Growth (%)": 1.048175847,
+          "Country": "France"
+        },
+        {
+          "Year": 1992,
+          "Annual GDP Growth (%)": 1.599342677,
+          "Country": "France"
+        },
+        {
+          "Year": 1993,
+          "Annual GDP Growth (%)": -0.628666352,
+          "Country": "France"
+        },
+        {
+          "Year": 1994,
+          "Annual GDP Growth (%)": 2.358342181,
+          "Country": "France"
+        },
+        {
+          "Year": 1995,
+          "Annual GDP Growth (%)": 2.106695253,
+          "Country": "France"
+        },
+        {
+          "Year": 1996,
+          "Annual GDP Growth (%)": 1.412993673,
+          "Country": "France"
+        },
+        {
+          "Year": 1997,
+          "Annual GDP Growth (%)": 2.336296529,
+          "Country": "France"
+        },
+        {
+          "Year": 1998,
+          "Annual GDP Growth (%)": 3.588659425,
+          "Country": "France"
+        },
+        {
+          "Year": 1999,
+          "Annual GDP Growth (%)": 3.421373799,
+          "Country": "France"
+        },
+        {
+          "Year": 2000,
+          "Annual GDP Growth (%)": 3.923669227,
+          "Country": "France"
+        },
+        {
+          "Year": 2001,
+          "Annual GDP Growth (%)": 1.983721419,
+          "Country": "France"
+        },
+        {
+          "Year": 2002,
+          "Annual GDP Growth (%)": 1.135531482,
+          "Country": "France"
+        },
+        {
+          "Year": 2003,
+          "Annual GDP Growth (%)": 0.823160757,
+          "Country": "France"
+        },
+        {
+          "Year": 2004,
+          "Annual GDP Growth (%)": 2.829752929,
+          "Country": "France"
+        },
+        {
+          "Year": 2005,
+          "Annual GDP Growth (%)": 1.66321998,
+          "Country": "France"
+        },
+        {
+          "Year": 2006,
+          "Annual GDP Growth (%)": 2.449323601,
+          "Country": "France"
+        },
+        {
+          "Year": 2007,
+          "Annual GDP Growth (%)": 2.424736243,
+          "Country": "France"
+        },
+        {
+          "Year": 2008,
+          "Annual GDP Growth (%)": 0.25494596,
+          "Country": "France"
+        },
+        {
+          "Year": 2009,
+          "Annual GDP Growth (%)": -2.873313828,
+          "Country": "France"
+        },
+        {
+          "Year": 2010,
+          "Annual GDP Growth (%)": 1.949437623,
+          "Country": "France"
+        },
+        {
+          "Year": 2011,
+          "Annual GDP Growth (%)": 2.192700633,
+          "Country": "France"
+        },
+        {
+          "Year": 2012,
+          "Annual GDP Growth (%)": 0.313134751,
+          "Country": "France"
+        },
+        {
+          "Year": 2013,
+          "Annual GDP Growth (%)": 0.576326675,
+          "Country": "France"
+        },
+        {
+          "Year": 2014,
+          "Annual GDP Growth (%)": 0.956183052,
+          "Country": "France"
+        },
+        {
+          "Year": 2015,
+          "Annual GDP Growth (%)": 1.112912341,
+          "Country": "France"
+        },
+        {
+          "Year": 2016,
+          "Annual GDP Growth (%)": 1.095464404,
+          "Country": "France"
+        },
+        {
+          "Year": 2017,
+          "Annual GDP Growth (%)": 2.291419994,
+          "Country": "France"
+        },
+        {
+          "Year": 2018,
+          "Annual GDP Growth (%)": 1.865066071,
+          "Country": "France"
+        },
+        {
+          "Year": 2019,
+          "Annual GDP Growth (%)": 1.842971814,
+          "Country": "France"
+        },
+        {
+          "Year": 2020,
+          "Annual GDP Growth (%)": -7.855256037,
+          "Country": "France"
+        },
+        {
+          "Year": 2021,
+          "Annual GDP Growth (%)": 6.963570788,
+          "Country": "France"
+        },
+        {
+          "Year": 1972,
+          "Annual GDP Growth (%)": 4.321667667,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1973,
+          "Annual GDP Growth (%)": 6.523848445,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1974,
+          "Annual GDP Growth (%)": -2.484404003,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1975,
+          "Annual GDP Growth (%)": -1.47364947,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1976,
+          "Annual GDP Growth (%)": 2.910266178,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1977,
+          "Annual GDP Growth (%)": 2.45775046,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1978,
+          "Annual GDP Growth (%)": 4.204260549,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1979,
+          "Annual GDP Growth (%)": 3.74901651,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1980,
+          "Annual GDP Growth (%)": -2.031367788,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1981,
+          "Annual GDP Growth (%)": -0.787743816,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1982,
+          "Annual GDP Growth (%)": 1.994891312,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1983,
+          "Annual GDP Growth (%)": 4.221856277,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1984,
+          "Annual GDP Growth (%)": 2.269105178,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1985,
+          "Annual GDP Growth (%)": 4.147414998,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1986,
+          "Annual GDP Growth (%)": 3.150340543,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1987,
+          "Annual GDP Growth (%)": 5.392738307,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1988,
+          "Annual GDP Growth (%)": 5.732413722,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1989,
+          "Annual GDP Growth (%)": 2.577602692,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1990,
+          "Annual GDP Growth (%)": 0.73375552,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1991,
+          "Annual GDP Growth (%)": -1.103121662,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1992,
+          "Annual GDP Growth (%)": 0.401082076,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1993,
+          "Annual GDP Growth (%)": 2.489830985,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1994,
+          "Annual GDP Growth (%)": 3.846009168,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1995,
+          "Annual GDP Growth (%)": 2.531670005,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1996,
+          "Annual GDP Growth (%)": 2.428542895,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1997,
+          "Annual GDP Growth (%)": 4.90902574,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1998,
+          "Annual GDP Growth (%)": 3.153973375,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1999,
+          "Annual GDP Growth (%)": 2.990111445,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2000,
+          "Annual GDP Growth (%)": 3.672369105,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2001,
+          "Annual GDP Growth (%)": 2.072656279,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2002,
+          "Annual GDP Growth (%)": 2.123222773,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2003,
+          "Annual GDP Growth (%)": 3.029889927,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2004,
+          "Annual GDP Growth (%)": 2.355629762,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2005,
+          "Annual GDP Growth (%)": 2.59328001,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2006,
+          "Annual GDP Growth (%)": 2.584104677,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2007,
+          "Annual GDP Growth (%)": 2.269486875,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2008,
+          "Annual GDP Growth (%)": -0.239638085,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2009,
+          "Annual GDP Growth (%)": -4.247356266,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2010,
+          "Annual GDP Growth (%)": 2.131438198,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2011,
+          "Annual GDP Growth (%)": 1.457563391,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2012,
+          "Annual GDP Growth (%)": 1.469887521,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2013,
+          "Annual GDP Growth (%)": 1.890018342,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2014,
+          "Annual GDP Growth (%)": 2.991164814,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2015,
+          "Annual GDP Growth (%)": 2.622596679,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2016,
+          "Annual GDP Growth (%)": 2.263463538,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2017,
+          "Annual GDP Growth (%)": 2.134453093,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2018,
+          "Annual GDP Growth (%)": 1.650925496,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2019,
+          "Annual GDP Growth (%)": 1.671944197,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2020,
+          "Annual GDP Growth (%)": -9.270410835,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 2021,
+          "Annual GDP Growth (%)": 7.441273093,
+          "Country": "United Kingdom"
+        },
+        {
+          "Year": 1972,
+          "Annual GDP Growth (%)": 3.690485825,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1973,
+          "Annual GDP Growth (%)": 7.125862304,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1974,
+          "Annual GDP Growth (%)": 5.500141101,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1975,
+          "Annual GDP Growth (%)": -2.090162915,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1976,
+          "Annual GDP Growth (%)": 7.125385137,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1977,
+          "Annual GDP Growth (%)": 2.560500845,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1978,
+          "Annual GDP Growth (%)": 3.240139752,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1979,
+          "Annual GDP Growth (%)": 5.959159426,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1980,
+          "Annual GDP Growth (%)": 3.430016414,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1981,
+          "Annual GDP Growth (%)": 0.844227607,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1982,
+          "Annual GDP Growth (%)": 0.413585695,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1983,
+          "Annual GDP Growth (%)": 1.169203495,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1984,
+          "Annual GDP Growth (%)": 3.225852315,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1985,
+          "Annual GDP Growth (%)": 2.798085767,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1986,
+          "Annual GDP Growth (%)": 2.859971864,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1987,
+          "Annual GDP Growth (%)": 3.191960628,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1988,
+          "Annual GDP Growth (%)": 4.194377308,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1989,
+          "Annual GDP Growth (%)": 3.388383454,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1990,
+          "Annual GDP Growth (%)": 1.985774943,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1991,
+          "Annual GDP Growth (%)": 1.538447558,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1992,
+          "Annual GDP Growth (%)": 0.834275454,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1993,
+          "Annual GDP Growth (%)": -0.852805764,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1994,
+          "Annual GDP Growth (%)": 2.151023638,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1995,
+          "Annual GDP Growth (%)": 2.886836759,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1996,
+          "Annual GDP Growth (%)": 1.266784802,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1997,
+          "Annual GDP Growth (%)": 1.830212234,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1998,
+          "Annual GDP Growth (%)": 1.810615162,
+          "Country": "Italy"
+        },
+        {
+          "Year": 1999,
+          "Annual GDP Growth (%)": 1.625727599,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2000,
+          "Annual GDP Growth (%)": 3.786955143,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2001,
+          "Annual GDP Growth (%)": 1.951371556,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2002,
+          "Annual GDP Growth (%)": 0.253942999,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2003,
+          "Annual GDP Growth (%)": 0.138626891,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2004,
+          "Annual GDP Growth (%)": 1.423594158,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2005,
+          "Annual GDP Growth (%)": 0.817848974,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2006,
+          "Annual GDP Growth (%)": 1.790639681,
+          "Country": "Italy"
+        },
+        {"Year": 2007, "Annual GDP Growth (%)": 1.48707298, "Country": "Italy"},
+        {
+          "Year": 2008,
+          "Annual GDP Growth (%)": -0.962012841,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2009,
+          "Annual GDP Growth (%)": -5.280937208,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2010,
+          "Annual GDP Growth (%)": 1.713295839,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2011,
+          "Annual GDP Growth (%)": 0.707333347,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2012,
+          "Annual GDP Growth (%)": -2.980905768,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2013,
+          "Annual GDP Growth (%)": -1.841065451,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2014,
+          "Annual GDP Growth (%)": -0.004547542,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2015,
+          "Annual GDP Growth (%)": 0.778304351,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2016,
+          "Annual GDP Growth (%)": 1.293462732,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2017,
+          "Annual GDP Growth (%)": 1.667859041,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2018,
+          "Annual GDP Growth (%)": 0.925810941,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2019,
+          "Annual GDP Growth (%)": 0.500233913,
+          "Country": "Italy"
+        },
+        {
+          "Year": 2020,
+          "Annual GDP Growth (%)": -9.025668928,
+          "Country": "Italy"
+        },
+        {"Year": 2021, "Annual GDP Growth (%)": 6.64379019, "Country": "Italy"}
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "source_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Annual GDP Growth (%)\"]) && isFinite(+datum[\"Annual GDP Growth (%)\"])"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_pathgroup",
+      "type": "group",
+      "from": {
+        "facet": {
+          "name": "faceted_path_layer_0_main",
+          "data": "source_0",
+          "groupby": ["Country"]
+        }
+      },
+      "encode": {
+        "update": {
+          "width": {"field": {"group": "width"}},
+          "height": {"field": {"group": "height"}}
+        }
+      },
+      "marks": [
+        {
+          "name": "layer_0_marks",
+          "type": "line",
+          "style": ["line"],
+          "sort": {"field": "datum[\"Year\"]"},
+          "from": {"data": "faceted_path_layer_0_main"},
+          "encode": {
+            "update": {
+              "stroke": {"scale": "color", "field": "Country"},
+              "description": {
+                "signal": "\"Year: \" + (isValid(datum[\"Year\"]) ? datum[\"Year\"] : \"\"+datum[\"Year\"]) + \"; Annual GDP Growth (%): \" + (format(datum[\"Annual GDP Growth (%)\"], \"\")) + \"; Country: \" + (isValid(datum[\"Country\"]) ? datum[\"Country\"] : \"\"+datum[\"Country\"])"
+              },
+              "x": {"scale": "x", "field": "Year"},
+              "y": {"scale": "y", "field": "Annual GDP Growth (%)"},
+              "defined": {
+                "signal": "isValid(datum[\"Annual GDP Growth (%)\"]) && isFinite(+datum[\"Annual GDP Growth (%)\"])"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "layer_1_marks",
+      "type": "symbol",
+      "style": ["point"],
+      "from": {"data": "data_0"},
+      "encode": {
+        "update": {
+          "opacity": {"value": 1},
+          "fill": {"scale": "color", "field": "Country"},
+          "ariaRoleDescription": {"value": "point"},
+          "description": {
+            "signal": "\"Year: \" + (isValid(datum[\"Year\"]) ? datum[\"Year\"] : \"\"+datum[\"Year\"]) + \"; Annual GDP Growth (%): \" + (format(datum[\"Annual GDP Growth (%)\"], \"\")) + \"; Country: \" + (isValid(datum[\"Country\"]) ? datum[\"Country\"] : \"\"+datum[\"Country\"])"
+          },
+          "x": {"scale": "x", "field": "Year"},
+          "y": {"scale": "y", "field": "Annual GDP Growth (%)"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "point",
+      "domain": {
+        "fields": [
+          {"data": "source_0", "field": "Year"},
+          {"data": "data_0", "field": "Year"}
+        ],
+        "sort": true
+      },
+      "range": [0, {"signal": "width"}],
+      "padding": 0.5
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "fields": [
+          {"data": "source_0", "field": "Annual GDP Growth (%)"},
+          {"data": "data_0", "field": "Annual GDP Growth (%)"}
+        ]
+      },
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {
+        "fields": [
+          {"data": "source_0", "field": "Country"},
+          {"data": "data_0", "field": "Country"}
+        ],
+        "sort": true
+      },
+      "range": ["#B0D6E8", "#DB1BC1", "#CCE8B0", "#C2B0E8"]
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "labelAlign": "right",
+      "labelAngle": 270,
+      "labelBaseline": "middle",
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ],
+  "legends": [
+    {
+      "orient": "bottom-left",
+      "title": "Country",
+      "stroke": "color",
+      "symbolType": "circle",
+      "fill": "color",
+      "encode": {"symbols": {"update": {"opacity": {"value": 1}}}}
+    }
+  ],
+  "config": {}
+}
