@@ -1,8 +1,9 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {
-    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/week8.csv"
-  },
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "width": 600,
+  "height": 340,
   "title": {
     "text": "Lowest-cost Grocery Items follow a similar trend to CPIH",
     "color": "#FF33F9",
@@ -14,16 +15,160 @@
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 11
   },
-  "width": 600,
-  "height": 340,
-  "mark": {"type": "line", "interpolate": "monotone", "point": true},
-  "encoding": {
-    "x": {"field": "Date", "type": "ordinal", "title": null},
-    "y": {"field": "Percentage", "type": "quantitative", "title": null,"scale":{"domain":[90, 120]},},
-    "color": {
-      "legend": {"title": "Category", "orient": "bottom-right"},
-      "field": "Category",
-      "scale": {"range": ["#AA1BDB", "#1BCCDB"]}
+  "style": "cell",
+  "data": [
+    {
+      "name": "source_0",
+      "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/week8.csv",
+      "format": {"type": "csv", "delimiter": ","}
+    },
+    {
+      "name": "data_0",
+      "source": "source_0",
+      "transform": [
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Percentage\"]) && isFinite(+datum[\"Percentage\"])"
+        }
+      ]
     }
-  }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_pathgroup",
+      "type": "group",
+      "from": {
+        "facet": {
+          "name": "faceted_path_layer_0_main",
+          "data": "source_0",
+          "groupby": ["Category"]
+        }
+      },
+      "encode": {
+        "update": {
+          "width": {"field": {"group": "width"}},
+          "height": {"field": {"group": "height"}}
+        }
+      },
+      "marks": [
+        {
+          "name": "layer_0_marks",
+          "type": "line",
+          "style": ["line"],
+          "sort": {"field": "datum[\"Date\"]"},
+          "from": {"data": "faceted_path_layer_0_main"},
+          "encode": {
+            "update": {
+              "interpolate": {"value": "monotone"},
+              "stroke": {"scale": "color", "field": "Category"},
+              "description": {
+                "signal": "\"Date: \" + (isValid(datum[\"Date\"]) ? datum[\"Date\"] : \"\"+datum[\"Date\"]) + \"; Percentage: \" + (format(datum[\"Percentage\"], \"\")) + \"; Category: \" + (isValid(datum[\"Category\"]) ? datum[\"Category\"] : \"\"+datum[\"Category\"])"
+              },
+              "x": {"scale": "x", "field": "Date"},
+              "y": {"scale": "y", "field": "Percentage"},
+              "defined": {
+                "signal": "isValid(datum[\"Percentage\"]) && isFinite(+datum[\"Percentage\"])"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "layer_1_marks",
+      "type": "symbol",
+      "style": ["point"],
+      "from": {"data": "data_0"},
+      "encode": {
+        "update": {
+          "opacity": {"value": 1},
+          "fill": {"scale": "color", "field": "Category"},
+          "ariaRoleDescription": {"value": "point"},
+          "description": {
+            "signal": "\"Date: \" + (isValid(datum[\"Date\"]) ? datum[\"Date\"] : \"\"+datum[\"Date\"]) + \"; Percentage: \" + (format(datum[\"Percentage\"], \"\")) + \"; Category: \" + (isValid(datum[\"Category\"]) ? datum[\"Category\"] : \"\"+datum[\"Category\"])"
+          },
+          "x": {"scale": "x", "field": "Date"},
+          "y": {"scale": "y", "field": "Percentage"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "point",
+      "domain": {
+        "fields": [
+          {"data": "source_0", "field": "Date"},
+          {"data": "data_0", "field": "Date"}
+        ],
+        "sort": true
+      },
+      "range": [0, {"signal": "width"}],
+      "padding": 0.5
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": [90, 120],
+      "range": [{"signal": "height"}, 0],
+      "zero": false
+    },
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {
+        "fields": [
+          {"data": "source_0", "field": "Category"},
+          {"data": "data_0", "field": "Category"}
+        ],
+        "sort": true
+      },
+      "range": ["#AA1BDB", "#1BCCDB"]
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "labelAlign": "right",
+      "labelAngle": 270,
+      "labelBaseline": "middle",
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ],
+  "legends": [
+    {
+      "orient": "bottom-right",
+      "title": "Category",
+      "stroke": "color",
+      "symbolType": "circle",
+      "fill": "color",
+      "encode": {"symbols": {"update": {"opacity": {"value": 1}}}}
+    }
+  ],
+  "config": {}
 }
