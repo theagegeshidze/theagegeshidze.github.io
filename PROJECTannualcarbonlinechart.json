@@ -58,7 +58,7 @@
     "color": {
       "field": "Entity",
       "type": "nominal",
-      "legend": {"orient": "top-right", "columns": 2},
+      "legend": {"orient": "top-left", "columns": 2},
       "sort": [],
       "scale": {"scheme": "darkmulti"}
     },
