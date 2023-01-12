@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple donut chart with embedded data.",
+  "background": null,
+  "padding": 30,
+  "width": 400,
+  "height": 500,
+  "title": {
+    "text": [
+      "Electricity Production in France",
+      "Data available for 2021"
+    ],
+    "subtitle": "Source: ourworldindata.org project on Electricity Mix",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+{"Electricity Sources": "Other renewables excluding bioenergy ", "Percentage": 0.01}, {"Electricity Sources": "Bionergy", "Percentage": 0.16}, {"Electricity Sources": "Oil", "Percentage": 0.19}, {"Electricity Sources": "Solar", "Percentage": 0.26}, {"Electricity Sources": "Wind", "Percentage": 0.67}, {"Electricity Sources": "Nuclear", "Percentage": 6.9}, {"Electricity Sources": "Hydro", "Percentage": 1.07}, {"Electricity Sources": "Gas", "Percentage": 0.62}, {"Electricity Sources": "Coal", "Percentage": 0.11}]
+  },
+  "mark": {"type": "arc", "innerRadius": 50, "tooltip":true},
+  "encoding": {
+    "theta": {"field": "Percentage", "type": "quantitative"},
+    "color": {"field": "Electricity Sources", "type": "nominal"}
+  }
+}
