@@ -4,7 +4,7 @@
     "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/data_death.csv"
   },
   "mark": "bar",
-  "width": "400",
+  "width": 400,
   "height": 400,
   "title": {
     "text": "Deaths relating to Electricity Production",
@@ -20,7 +20,7 @@
    "color": {"value": "#DE3163"},    
     "tooltip": [
       {"field": "Energy Type", "type": "nominal", "title": "Food"},
-      {"field": "Deaths per TWh of electricity production", "type": "quantitative", "title": "Deaths "},
+      {"field": "Deaths per TWh of electricity production", "type": "quantitative", "title": "Deaths "}
     ]
-  },
+  }
 }
