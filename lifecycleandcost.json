@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": " ",
+  "title": {
+    "text": "Emissions and cost of various fuel sources",
+    "subtitle": [
+      "CO2 emissions per unit of electricity generated (KWH) and",
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/costandemissions.csv"
+  },
+  "mark": {"type": "bar", "color": "#fa3188", "strokeWidth": 2, "opacity": 1},
+  "height": 350,
+  "width": 500,
+  "background": null,
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "layer": [
+    {
+      "mark": {"type": "bar"},
+      "encoding": {
+        "color": {
+          "field": "Overnight Cost ($KW)",
+          "type": "quantitative",
+          "title": "Cost ($KW)",
+          "legend": {
+            "orient": "top-left",
+            "type": "gradient",
+            "direction": "vertical"
+          },
+          "scale": {"scheme": "darkmulti"}
+        }
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Fuel Source",
+      "type": "ordinal",
+      "sort": [],
+      "title": null,
+      "axis": {"labelAngle": 330}
+    },
+    "y": {
+      "field": "Lifecycle Emissions inc. Albedo effect",
+      "type": "quantitative",
+      "title": "CO2 (equivalent) / KWH"
+    },
+    "tooltip": [
+      {
+        "field": "Lifecycle Emissions inc. Albedo effect",
+        "type": "quantitative",
+        "title": "CO2 Emissions"
+      },
+      {"field": "Overnight Cost ($KW)", "type": "nominal", "title": "Overnight Cost ($KW)"}
+    ]
+  }
+}
