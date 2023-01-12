@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple donut chart with embedded data.",
+  "background": null,
+  "padding": 30,
+  "width": 400,
+  "height": 500,
+  "title": {
+    "text": [
+      "Global Electricity Production",
+      "Data available for 2021"
+    ],
+    "subtitle": "Source: ourworldindata.org project on Electricity Mix",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "values": [
+{"Sources": "Other renewables excluding bioenergy", "Percentage": 0.34}, {"Sources": "Bioenergy", "Percentage": 2.4}, {"Sources": "Oil","Percentage": 2.74}, {"Sources": "Solar", "Percentage": 3.68}, {"Sources": "Wind", "Percentage": 6.65}, {"Sources": "Nuclear", "Percentage": 9.86}, {"Sources": "Electricity from hydro (TWh)", "Percentage": 15.21}, {"Sources": "Hydro", "Percentage": 22.74}, {"Sources": "Coal", "Percentage": 36.39}]
+
+  },
+  "mark": {"type": "arc", "innerRadius": 50, "tooltip":true},
+  "encoding": {
+    "theta": {"field": "Percentage", "type": "quantitative"},
+    "color": {"field": "Sources", "type": "nominal"}
+  }
+}
