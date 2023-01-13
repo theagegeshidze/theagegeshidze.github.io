@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": " ",
+  "title": {
+    "text": "Emissions and cost of various fuel sources",
+    "subtitle": [
+      "CO2 lifecycle emissions per unit of electricity generated (KWH) and cost in $per KW. ",
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/costandemissionsnew.csv"
+  },
+  "mark": {"type": "bar", "color": "#fa3188", "strokeWidth": 2, "opacity": 1},
+  "height": 380,
+  "width": 500,
+  "background": null,
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "layer": [
+    {
+      "mark": {"type": "bar"},
+      "encoding": {
+        "color": {
+          "field": "Overnight Cost",
+          "type": "quantitative",
+          "title": "Cost ($KW)",
+          "legend": {
+            "orient": "top-left",
+            "type": "gradient",
+            "direction": "vertical"
+          },
+          "scale": {"scheme":"redpurple"}
+        }
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Fuel Source",
+      "type": "ordinal",
+      "sort": [],
+      "title": null,
+      "axis": {"labelAngle": 330}
+    },
+    "y": {
+      "field": "Lifecycle Emissions",
+      "type": "quantitative",
+      "title": "CO2 (equivalent) / KWH"
+    },
+    "tooltip": [
+      {
+        "field": "Lifecycle Emissions",
+        "type": "quantitative",
+        "title": "CO2 Emissions"
+      },
+      {"field": "Overnight Cost", "type": "nominal", "title": "Overnight Cost ($KW)"}
+    ]
+  }
+}
