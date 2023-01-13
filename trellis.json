@@ -1,0 +1,171 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "background": "white",
+  "padding": 5,
+  "title": {
+    "text": "Comparing Four Economy Categories",
+    "subtitle": [
+      "Carbon emissions over time in billion tonnes, data from ourworldindata.org",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": [
+    {
+      "name": "source_0",
+      "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/lowhightrellis.csv",
+      "format": {"type": "csv", "parse": {"Year": "date"}, "delimiter": ","},
+      "transform": [
+        {
+          "type": "fold",
+          "fields": [
+            "High-income countries",
+            "Low-income countries",
+            "Lower-middle-income countries",
+            "Upper-middle-income countries"
+          ],
+          "as": ["country", "GDP"]
+        }
+      ]
+    },
+    {
+      "name": "facet_domain",
+      "source": "source_0",
+      "transform": [{"type": "aggregate", "groupby": ["Entity"]}]
+    },
+    {
+      "name": "facet_domain_column",
+      "transform": [
+        {
+          "type": "sequence",
+          "start": 0,
+          "stop": {"signal": "min(length(data(\"facet_domain\")), 2)"}
+        }
+      ]
+    }
+  ],
+  "signals": [
+    {"name": "child_width", "value": 200},
+    {"name": "child_height", "value": 200}
+  ],
+  "layout": {"padding": 20, "bounds": "full", "align": "none", "columns": 2},
+  "marks": [
+    {
+      "name": "column_footer",
+      "type": "group",
+      "role": "column-footer",
+      "from": {"data": "facet_domain_column"},
+      "encode": {"update": {"width": {"signal": "child_width"}}},
+      "axes": [
+        {
+          "scale": "x",
+          "orient": "bottom",
+          "grid": false,
+          "labelFlush": true,
+          "labelOverlap": true,
+          "tickCount": {"signal": "ceil(child_width/40)"},
+          "zindex": 0
+        }
+      ]
+    },
+    {
+      "name": "cell",
+      "type": "group",
+      "title": {
+        "text": {
+          "signal": "isValid(parent[\"Entity\"]) ? parent[\"Entity\"] : \"\"+parent[\"Entity\"]"
+        },
+        "style": "guide-label",
+        "frame": "group",
+        "offset": 10
+      },
+      "style": "cell",
+      "from": {
+        "facet": {"name": "facet", "data": "source_0", "groupby": ["Entity"]}
+      },
+      "sort": {"field": ["datum[\"Entity\"]"], "order": ["ascending"]},
+      "encode": {
+        "update": {
+          "width": {"signal": "child_width"},
+          "height": {"signal": "child_height"}
+        }
+      },
+      "marks": [
+        {
+          "name": "child_marks",
+          "type": "line",
+          "style": ["line"],
+          "sort": {"field": "datum[\"Year\"]"},
+          "from": {"data": "facet"},
+          "encode": {
+            "update": {
+              "strokeWidth": {"value": 2},
+              "stroke": {"value": "#4c78a8"},
+              "description": {
+                "signal": "\"Year: \" + (timeFormat(datum[\"Year\"], '%b %d, %Y')) + \"; CO2 Emissions- annual, bn tonnes: \" + (format(datum[\"Annual CO2 emissions Billion Tonnes\"], \"\"))"
+              },
+              "x": {"scale": "x", "field": "Year"},
+              "y": {
+                "scale": "child_y",
+                "field": "Annual CO2 emissions Billion Tonnes"
+              },
+              "defined": {
+                "signal": "isValid(datum[\"Year\"]) && isFinite(+datum[\"Year\"]) && isValid(datum[\"Annual CO2 emissions Billion Tonnes\"]) && isFinite(+datum[\"Annual CO2 emissions Billion Tonnes\"])"
+              }
+            }
+          }
+        }
+      ],
+      "scales": [
+        {
+          "name": "child_y",
+          "type": "linear",
+          "domain": {
+            "data": "facet",
+            "field": "Annual CO2 emissions Billion Tonnes"
+          },
+          "range": [{"signal": "child_height"}, 0],
+          "nice": true,
+          "zero": true
+        }
+      ],
+      "axes": [
+        {
+          "scale": "child_y",
+          "orient": "left",
+          "gridScale": "x",
+          "grid": true,
+          "tickCount": {"signal": "ceil(child_height/40)"},
+          "domain": false,
+          "labels": false,
+          "aria": false,
+          "maxExtent": 0,
+          "minExtent": 0,
+          "ticks": false,
+          "zindex": 0
+        },
+        {
+          "scale": "child_y",
+          "orient": "left",
+          "grid": false,
+          "title": "CO2 Emissions- annual, bn tonnes",
+          "labelOverlap": true,
+          "tickCount": {"signal": "ceil(child_height/40)"},
+          "zindex": 0
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "time",
+      "domain": {"data": "source_0", "field": "Year"},
+      "range": [0, {"signal": "child_width"}]
+    }
+  ],
+  "config": {}
+}
