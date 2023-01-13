@@ -45,17 +45,13 @@
      
         <div class="chart" id="chart35"> </div>
         
-        <p> Aim:
-        Climate change is one of the most pressing challenges facing our world today, and finding ways to reduce
-        our carbon emissions and protect the planet for future generations is more important than ever. One potential
-        solution that has been proposed is the use of nuclear power as a low-carbon source of electricity. However, 
-        the role of nuclear power in the fight against climate change is a topic of ongoing debate, with both supporters
-        and critics raising valid points. Climate activists tend to agree that renewables will play an important role, but
-        the role of nuclear power remains contentious. By comparing the relative; safety, capacity, inertia, cost, 
-        stability and possibility of the two options, we aim to explore whether there is space for nuclear power in our 
-        fight against the climate crisis. </p>
-        
-        <div class="chart" id="chart31"> </div>
+        <p> Aim: 
+         Climate change is one of the most pressing challenges facing our world today, and finding ways to reduce our carbon emissions
+         and protect the planet for future generations is more important than ever. 
+
+         One potential solution that has been proposed is the use of nuclear power as a low-carbon source of electricity, another the use
+         of renewables such as hydropower, solar power or wind. This project aims to explore which approach is better. 
+         </p>
         
  </div>
 
@@ -63,25 +59,121 @@
  <div class="Background">
         <h3>Background</h3>
         
-        <p>Background: First, let’s explore some graphs to set the global scene in terms of fossil fuel dependence and carbon emissions.
-        We can see from our first trellis graph, how much the top 6 global economies rely on carbon intensive energy sources such as coal. </p>
+        <p>First, let’s set the scene.
+
+         In order to explore the impact, another necessary graph is CO2 emissions per capita on a global scale. I used information
+         from the CO2 emissions section from ourworldindata.org. The data was cleaned and put into a TIDY format in Python. We can
+         also see from our pie chart just how dependent we are on coal for electricity production on a global scale.
+
+         It is evident that we can not continue with the status quo.So which path should we go down: nuclear power or renewables?
+         We will be using the following metrics to compare the two pathways: safety, emissions, capacity, stability, time and cost.
+
+        </p>
         
-        <div class="chart" id="chart32"> </div>
+        <div class="chart" id="chart35"> </div>
+     
+  <div class="Safety">
+        <h3>Safety</h3>
+        
+        <p>Nuclear power is often considered unsafe due to largely well known disasters such as Fukushima or Chernobyl. 
+
+        However, evidence suggests that this fear is generally unwarranted, especially when compared to how unsafe our 
+        current main source of energy is (fossil fuels). 
+
+        We demonstrate this by looking at the rates of death associated with each source of energy. Both nuclear and 
+        renewables are much safer alternatives than the status quo. The data was extracted from ourworldindata.org and tidied up in Python.
+
+        Safety is not a concern when comparing nuclear power and renewables.
+        </p>
+        
         <div class="chart" id="chart33"> </div>
-
-
-        <p> In order to explore the impact, another necessary graph is the C02 emissions globally.
-        I chose to represent this using a choropleth. I used information from ourworldindata.org/co2emissions. 
-        The data was cleaned and put into a TIDY format in Python. Notably, we see harsh increases in Carbon Dioxide emissions, 
-        and no notable drops in any areas from any policy or climate activism. With some inference, our chart reveals two things:
-        a) carbon emissions are continuing to grow and no efforts currently have had a big impact on emissions and b) the very 
-        composition of who is polluting the most has changed from Europe and the US in 1950, but now we are seeing notable increases
-        in Asia, specifically China. Considering the changing economic climate, with much of production being outsourced to Asia, 
-        this makes sense; and should inform where policy recommendations are concentrated.</p>
+      
+  <div class="Carbon Emissions">
+        <h3>Carbon Emissions</h3>
         
-      <div class="chart" id="chart34"> </div>
-      <div class="chart" id="chart36"> </div>
-        </div>
+        <p>We can see that both options are low in carbon emissions, with XYZ pulling just ahead. 
+
+        It is important to note that we looked over these emissions in the long run using lifecycle emissions. In the short run, 
+        nuclear power has a major downside; plants are incredibly carbon intensive to build. Over time these emissions are made up 
+        for due to the ultra low carbon emissions post commission and economies of scale. 
+
+        Setting up and building renewables will also, of course, be to an extent carbon intensive; but it is much smaller than setting
+        up nuclear power reactors. Looking at our graph, we can see that all of them are remarkably better than coal.
+        </p>
+      <h3>Cost</h3>
+        <p> Cost is another important factor, and for many policy makers it is the most important factor. Nuclear reactors cost billions.
+        Even considering some complex infrastructure for renewables, nuclear power is considerably more expensive to implement.
+
+        Sourcing power 100% from nuclear, is economically not feasible and this may create a compelling argument for 100% renewables. There 
+        is also evidence that solar in particular is decreasing in price rapidly (/all renewables) supporting the case. 
+
+        Mention specifically solar with a drop down thingy.
+            
+        However, research suggests that overall all the cheapest solutions do include nuclear. This is XYZ and the suggestions are... 
+        As suggested in this Chicago study, it makes sense to use renewables up until their sweet spot and use nuclear to supplement the gap.
+        </p>
+      
+      <div class="chart" id="chart31"> </div> 
+      <div class="chart" id="chart31"> </div> 
+       
+ <div class="Capacity">
+        <h3>Capacity</h3>
+        
+        <p>The main challenge with regards to capacity is that renewables require much more space than nuclear power. Nuclear power uses a lot 
+        of existing infrastructure, whilst new grid interconnectors would need to be built for renewables to reach some areas.
+ 
+        On the other hand, nuclear power would struggle with being able to reach rural areas or areas with low population density, a challenge that
+        renewables would tackle with ease. 
+
+        In theory, both are capable of replacing fossil fuels, but not without research, development and inevitable challenges.
+
+        </p>
+        
+        <div class="chart" id="chart31"> </div> 
+     
+   <div class="Stability">
+        <h3>Stability</h3>
+        
+        <p>One of the most important challenges, and criticisms of renewables is stability. A well known statement is that the “sun doesn’t always
+        shine and the wind doesn’t always blow”, and this is true. In order to have a renewable dependent system, we would need a lot of storage to
+        make up for these gaps in production, which takes up a lot of space. 
+
+        Storage and hybridisation also requires very expensive infrastructure. Whilst renewables are variable, nuclear power is much more stable and
+        will have no trouble supplying constant power. Nuclear provides considerably more stability.
+        </p>
+        
+        <div class="chart" id="chart31"> </div>
+       
+   <div class="Conclusion">
+        <h3>Conclusion</h3>
+        
+        <p>Team Nuclear v Team Renewables should not be the debate, suggesting we go 100% either is complicated and unnecessary. Both ‘camps’ have pros
+        and cons. Renewables are cheap to build, quick to build and allow for rural electrification, however it needs a lot of infrastructure that currently
+        doesn’t exist and lacks stability (due to its inherent variability). Nuclear on the other hand fills the gap and allows for great stability, and is 
+        also cheap in the long run but it is excessively expensive and slow to build; with the average reactor taking 108 months to build, and the climate crisis 
+        looming, nuclear is hardly the silver bullet. 
+
+        So, is nuclear the only solution? No. Is relying entirely on renewables the solution? No.  But, is nuclear power a useful tool to help lower our carbon
+        emissions in a future hybrid grid which is primarily made up of advancing renewables such as solar or wind? Yes.
+
+        At the end of the day, time is running out. We just need to get on with it. Trying to aim for 100% nuclear or renewable energy may be possible but it will
+        be excessively difficult. The best approach is to combine the two, and allow each source to balance the shortcomings of the other; with nuclear bringing the
+        stability renewables lack, and renewables providing the fast and inexpensive solutions we need to deal with the climate crisis quickly and effectively.
+        </p>
+        
+    <div class="Data">
+        <h3>Data used in the project</h3>
+        
+        <p>
+        </p>   
+        
+    <div class="Data 2">
+        <h3>Challenges with the data</h3>
+        
+        <p>
+        </p>  
+     
+       
         
 </body>
         
