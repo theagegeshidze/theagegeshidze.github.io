@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "lifecycle v emissions ",
+  "background": null,
+  "padding": 5,
+  "width": 500,
+  "height": 380,
+  "title": {
+    "text": "Emissions and cost of various fuel sources",
+    "subtitle": [
+      "CO2 lifecycle emissions per unit of electricity generated (KWH) and cost in $per KW. "
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "style": "cell",
+  "data": [
+    {
+      "name": "source_0",
+      "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/costandemissionsnew.csv",
+      "format": {"type": "csv", "delimiter": ","},
+      "transform": [
+        {"type": "formula", "expr": "0", "as": "x_Fuel Source_sort_index"}
+      ]
+    },
+    {
+      "name": "data_0",
+      "source": "source_0",
+      "transform": [
+        {
+          "type": "stack",
+          "groupby": ["Fuel Source"],
+          "field": "Lifecycle Emissions",
+          "sort": {"field": ["Overnight Cost"], "order": ["descending"]},
+          "as": ["Lifecycle Emissions_start", "Lifecycle Emissions_end"],
+          "offset": "zero"
+        },
+        {
+          "type": "filter",
+          "expr": "isValid(datum[\"Lifecycle Emissions\"]) && isFinite(+datum[\"Lifecycle Emissions\"]) && isValid(datum[\"Overnight Cost\"]) && isFinite(+datum[\"Overnight Cost\"])"
+        }
+      ]
+    }
+  ],
+  "marks": [
+    {
+      "name": "layer_0_marks",
+      "type": "rect",
+      "style": ["bar"],
+      "from": {"data": "data_0"},
+      "encode": {
+        "update": {
+          "fill": {"scale": "color", "field": "Overnight Cost"},
+          "tooltip": {
+            "signal": "{\"CO2 Emissions\": format(datum[\"Lifecycle Emissions\"], \"\"), \"Overnight Cost ($KW)\": isValid(datum[\"Overnight Cost\"]) ? datum[\"Overnight Cost\"] : \"\"+datum[\"Overnight Cost\"]}"
+          },
+          "ariaRoleDescription": {"value": "bar"},
+          "description": {
+            "signal": "\"Fuel Source: \" + (isValid(datum[\"Fuel Source\"]) ? datum[\"Fuel Source\"] : \"\"+datum[\"Fuel Source\"]) + \"; CO2 (equivalent) / KWH: \" + (format(datum[\"Lifecycle Emissions\"], \"\")) + \"; Cost ($KW): \" + (format(datum[\"Overnight Cost\"], \"\")) + \"; CO2 Emissions: \" + (format(datum[\"Lifecycle Emissions\"], \"\")) + \"; Overnight Cost ($KW): \" + (isValid(datum[\"Overnight Cost\"]) ? datum[\"Overnight Cost\"] : \"\"+datum[\"Overnight Cost\"])"
+          },
+          "x": {"scale": "x", "field": "Fuel Source"},
+          "width": {"signal": "max(0.25, bandwidth('x'))"},
+          "y": {"scale": "y", "field": "Lifecycle Emissions_end"},
+          "y2": {"scale": "y", "field": "Lifecycle Emissions_start"}
+        }
+      }
+    }
+  ],
+  "scales": [
+    {
+      "name": "x",
+      "type": "band",
+      "domain": {
+        "data": "source_0",
+        "field": "Fuel Source",
+        "sort": {"op": "min", "field": "x_Fuel Source_sort_index"}
+      },
+      "range": [0, {"signal": "width"}],
+      "paddingInner": 0.1,
+      "paddingOuter": 0.05
+    },
+    {
+      "name": "y",
+      "type": "linear",
+      "domain": {
+        "data": "data_0",
+        "fields": ["Lifecycle Emissions_start", "Lifecycle Emissions_end"]
+      },
+      "range": [{"signal": "height"}, 0],
+      "nice": true,
+      "zero": true
+    },
+    {
+      "name": "color",
+      "type": "linear",
+      "domain": {"data": "data_0", "field": "Overnight Cost"},
+      "range": {"scheme": "redpurple"},
+      "interpolate": "hcl",
+      "zero": false
+    }
+  ],
+  "axes": [
+    {
+      "scale": "y",
+      "orient": "left",
+      "gridScale": "x",
+      "grid": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "domain": false,
+      "labels": false,
+      "aria": false,
+      "maxExtent": 0,
+      "minExtent": 0,
+      "ticks": false,
+      "zindex": 0
+    },
+    {
+      "scale": "x",
+      "orient": "bottom",
+      "grid": false,
+      "labelAngle": 330,
+      "labelAlign": "right",
+      "labelBaseline": "top",
+      "zindex": 0
+    },
+    {
+      "scale": "y",
+      "orient": "left",
+      "grid": false,
+      "title": "CO2 (equivalent) / KWH",
+      "labelOverlap": true,
+      "tickCount": {"signal": "ceil(height/40)"},
+      "zindex": 0
+    }
+  ],
+  "legends": [
+    {
+      "direction": "vertical",
+      "orient": "top-left",
+      "title": "Cost ($KW)",
+      "fill": "color",
+      "gradientLength": {"signal": "clamp(height, 64, 200)"}
+    }
+  ],
+  "config": {"style": {"cell": {"stroke": "transparent"}}}
+}
