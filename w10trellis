@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+         
+    "title": {
+        "text": "Comparing Four Economy Categories",
+        "subtitle":["Carbon emissions over time in billion tonnes, data from ourworldindata.org",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+        
+    "data": {
+        "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/lowhightrellis.csv"
+        },
+    
+    "transform": [
+        {"fold":["High-income countries", "Low-income countries", "Lower-middle-income countries", "Upper-middle-income countries"], "as": ["country", "GDP"]}
+        ],
+          
+    "height": 200,
+    "width": 200,   
+    
+    "mark": {   
+            "type":"line",
+            "strokeWidth":2},    
+    
+    "encoding": {
+            "x": {
+                "field": "Year",
+                "type": "temporal",
+                "title":null,
+                "axis":{"grid": false}},
+    
+            "y": {
+                "field": "Annual CO2 emissions Billion Tonnes",
+                "type": "quantitative",
+                "title": "CO2 Emissions- annual, bn tonnes"},
+    
+            "facet": {
+                "field": "Entity",
+                "columns": 2,
+                "title":null}
+    },
+  
+      "resolve": {"scale": {"y": "independent"}}
+  }
