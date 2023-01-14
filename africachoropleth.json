@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Access to Electricity in Africa",
+    "subtitle": "A map of Africa with a colour code for the percentage of the population with access to electricity",
+    "anchor": "start",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 8
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/africageo.geojson",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "mercator"},
+  "transform": [
+    {
+      "lookup": "country",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/global%20literacy.csv"
+        },
+        "key": "country",
+        "fields": ["Access to electricity"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
+  "encoding": {
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "Country"},
+      {"field": "Access to electricity", "title": "Access to Electricity %"}
+    ],
+    "color": {
+      "field": "Access to electricity",
+      "type": "quantitative",
+      "title": "%",
+      "scale": {"scheme": "blues"}
+    }
+  }
+}
