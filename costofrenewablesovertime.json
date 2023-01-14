@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {"url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/lazardextracted.csv"},
+  "title":"Cost of Renewables Over Time",
+  "mark": {
+    "type": "line",
+    "width": 500,
+    "height": 500,
+    "point": {
+      "filled": false,
+      "fill": "white"
+    }
+    
+  },
+  "encoding": {
+    "x": {"field": "Year", "title":null},
+    "y": {"field": "Mean LCOE", "type": "quantitative"},
+    "color": {"field": "Type", "type": "nominal"}
+  },
+   "tooltip": [
+      {"field": "Year", "type": "nominal", "title": "Food"},
+      {"field": "Mean LCOE", "type": "quantitative", "title": "Emissions"},
+      {"field": "Type"}
+    ]
+}
