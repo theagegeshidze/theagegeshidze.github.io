@@ -1,0 +1,89 @@
+﻿Type,Year,Mean LCOE
+Solar PV Crystalline,2009,359
+Solar PV Crystalline,2010,248
+Solar PV Crystalline,2011,159
+Solar PV Crystalline,2012,125
+Solar PV Crystalline,2013,104
+Solar PV Crystalline,2014,79
+Solar PV Crystalline,2015,64
+Solar PV Crystalline,2016,55
+Solar PV Crystalline,2017,50
+Solar PV Crystalline,2018,43
+Solar PV Crystalline,2019,41
+Wind,2009,135
+Wind,2010,124
+Wind,2011,83
+Wind,2012,72
+Wind,2013,70
+Wind,2014,59
+Wind,2015,55
+Wind,2016,47
+Wind,2017,45
+Wind,2018,42
+Wind,2019,40
+Gas,2009,83
+Gas,2010,96
+Gas,2011,95
+Gas,2012,75
+Gas,2013,74
+Gas,2014,79
+Gas,2015,65
+Gas,2016,63
+Gas,2017,60
+Gas,2018,58
+Gas,2019,56
+Geothermal,2009,76
+Geothermal,2010,107
+Geothermal,2011,104
+Geothermal,2012,116
+Geothermal,2013,116
+Geothermal,2014,116
+Geothermal,2015,100
+Geothermal,2016,98
+Geothermal,2017,97
+Geothermal,2018,91
+Geothermal,2019,91
+Coal,2009,111
+Coal,2010,111
+Coal,2011,111
+Coal,2012,102
+Coal,2013,104
+Coal,2014,109
+Coal,2015,108
+Coal,2016,102
+Coal,2017,102
+Coal,2018,102
+Coal,2019,109
+Nuclear,2009,123
+Nuclear,2010,107
+Nuclear,2011,95
+Nuclear,2012,96
+Nuclear,2013,105
+Nuclear,2014,112
+Nuclear,2015,117
+Nuclear,2016,117
+Nuclear,2017,148
+Nuclear,2018,151
+Nuclear,2019,155
+Solar thermal tower,2009,168
+Solar thermal tower,2010,157
+Solar thermal tower,2011,159
+Solar thermal tower,2012,174
+Solar thermal tower,2013,145
+Solar thermal tower,2014,124
+Solar thermal tower,2015,150
+Solar thermal tower,2016,151
+Solar thermal tower,2017,140
+Solar thermal tower,2018,140
+Solar thermal tower,2019,141
+Gas Peaker,2009,275
+Gas Peaker,2010,243
+Gas Peaker,2011,227
+Gas Peaker,2012,216
+Gas Peaker,2013,205
+Gas Peaker,2014,205
+Gas Peaker,2015,192
+Gas Peaker,2016,191
+Gas Peaker,2017,183
+Gas Peaker,2018,179
+Gas Peaker,2019,175
