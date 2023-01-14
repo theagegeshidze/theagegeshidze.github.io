@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Africa",
+    "subtitle": "Original base map data downloaded from geojson-maps.ash.ms",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 9,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/africageo.geojson",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "mercator"},
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "fill": "pink",
+    "strokeWidth": 1.5
+  },
+  "encoding": {"tooltip": {"field": "properties.name", "type": "nominal"}}
+}
