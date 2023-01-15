@@ -47,7 +47,9 @@
 
         <div id="text">
           <h3> Week 1 :Embedding</h3>
-          <p> Week One saw us setting up our websites and embedding two charts from the rapid charts repository. One is a line graph of UK Labour productivity between 1971 and 2021. The second one shows y. </p>
+          <p> Week One saw us setting up our websites and embedding two charts from the rapid charts repository. 
+            One is a line graph of UK Labour productivity between 1971 and 2021. The second one shows the greenhouse gas emissions of a variety
+            of food in a stacked bar chart form. </p>
 
           <div class="chart" id="chart2"> </div>
           <div class="chart" id="chart1"> </div>
@@ -63,8 +65,10 @@
         <p>Credit Outstanding to all members, 1984-2021 - corrected chart</p>
         <div class="chart" id="chart4"></div>
 
-        <p>1984 would have been the most risky year due to the fact that IMF lending represented
-          the highest proportion of global GDP during this period. </p>
+        <p>Our first chart is a recreation from the Financial Times. The second chart is "fixed" as it more effectively tells us the
+          story about how much of this lending makes up global GDP; framing the data in a more understandable way. Our old chart suggests
+          that 2022 is the riskiest year. Our adapted chart reveals it is 1984 as this was when credit outstanding represented the highest
+          proportion of global GDP during our period. </p>
       </div>
 
 
@@ -73,18 +77,32 @@
         <p>The growth rate of the big 4 countries (% annual)</p>
         <div class="chart" id="chart5"></div>
         <div class="chart" id="chart6"></div>
+         <p>Using inline data (organised and created in python) I created two charts both representing the sources that contribute to
+        Global electricity production. Although it is clear in the first chart that the coal bar is much higher, the pie chart visual encoding
+        makes the difference in proportions more visually clear, telling the story of how much we rely on fossil fuels clearer and more visually compelling.</p>
+         <p> Here is the link to the Google colab python notebook where I conducted the data analysis. </p>
+        <a href="https://colab.research.google.com/github/theagegeshidze/theagegeshidze.github.io/blob/main/week5.ipynb">
+          Google Colab </a>
+      </div>
       </div>
 
       <div class="myWeek4">
         <h3> Week 4 </h3>
         <div class="chart" id="chart7"></div>
         <p> How much carbon each country globally has emmitted (metric tonnes)</p>
-        <p> I chose this website because...</p>
+        <p>  Using a Google Colab python notebook, I scraped a website using pandas and then cleaned and normalised the data and exported into TIDY 
+          (long form) format. I then exported this into a bar chart that shows the sources of electricity in France. I chose this website because it
+        was easy to scrape from, the table didn't have too many complex widgets. The data also corresponded with my research on nuclear power for my project, and 
+        was the best tabular source for the information I needed. </p>
+        
+         <p> Here is the link to the Google colab python notebook where I conducted the data analysis. </p>
+        <a href="https://colab.research.google.com/github/theagegeshidze/theagegeshidze.github.io/blob/main/week5.ipynb">
+          Google Colab </a>
 
       </div>
 
       <div class="myWeek5">
-        <h3> Week 5: Dashboard </h3>
+        <h3> Week 5: ONS Tax Dashboard </h3>
         <div class="chart" id="chart8"></div>
         <div class="chart" id="chart9"></div>
         <div class="chart" id="chart10"></div>
@@ -94,7 +112,8 @@
         <div class="chart" id="chart14"></div>
         <div class="chart" id="chart15"></div>
         <div class="chart" id="chart16"></div>
-        <p> Here is the link to the Google colab python notebook where the data analysis was conducted. </p>
+        <p> I used the ONS's API to create a loop and generate 9 charts diving into the different revenues of tax the HMRC collected.
+          Here is the link to the Google colab python notebook where the data analysis was conducted. </p>
         <a
           href="https://colab.research.google.com/github/theagegeshidze/theagegeshidze.github.io/blob/main/week5.ipynb">
           Google Colab </a>
@@ -104,7 +123,13 @@
         <h3> Week 7 : Two maps: a base map and a choropleth </h3>
         <div class="chart" id="chart23"></div>
         <div class="chart" id="chart22"></div>
-        <p> How much carbon each country globally has emmitted (metric tonnes)</p>
+        <p> I focussed on Africa and electricity access for my base map and choropleth as it corresponded with my project, and my research into
+        how necessary renewables on a micro-grid were for rural areas with lower access to electricity. My maps reveal that for our data, West Africa
+        has incredibly low rates of universal electricity access, but that around 75% of Africa does in fact have almost universal access. We can infer this is 
+        likely a poverty problem that impacts rural areas the most.</p>
+         <p> Here is the link to the Google colab python notebook where I conducted the data analysis. </p>
+        <a href="https://colab.research.google.com/github/theagegeshidze/theagegeshidze.github.io/blob/main/week5.ipynb">
+          Google Colab </a>
       </div>
 
 
@@ -112,17 +137,28 @@
         <h3> Week 8: Festival of Economics </h3>
         <div class="chart" id="chart20"></div>
         <div class="chart" id="chart18"></div>
-        <p> I went to thissssss talk and they said this.</p>
-        <p> here are my graphs and this is what they say </p>
+        <p> In the 'Big Data' talk, Arthur Turrell said that recently the inflation of prices are hitting low cost goods more than general goods.
+        I found this really interesting as the implications would be that the poorest would be the most hit by the cost of living crisis. I found
+        a very helpful experimental illness by the Office of National Statistics (Turrell's workplace). My first graph reveals that there is little
+        differentiation between CPIH and lower cost goods over the period. </p>
+       
 
       </div>
 
       <div class="myWeek9">
         <h3> Week 9: Advanced Charts </h3>
         <div class="chart" id="chart21"> </div>
-        <p> Here are my complex charts.</p>
+        <p> Week 9 and 10 had us creating more advanced charts. The first advanced chart I made was a four graph trellis showing how different sections globally
+        (high income countries for example) emit carbon emissions over time. The trellis helped to organize data into multiple dimensions and allow us to compare them
+          visually in the same graphic.</p>
         <img src="https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/heatmapportfolio.png" alt="Matrix" height = 500px width = 300px/>
-        <p> they are very very advanced </p>
+        <p> The second advanced chart was a heat map comparing GBP and USD exchange rates both over the years and over the months of the year. Before learning
+        about these more advanced charts I would have likely used a line graph to represent this information. However, the heat map generated using sklearn in
+        python, provides a much more compelling visual resource, and allows for faster access to understanding trends or changes across the whole picture.</p>
+        
+         <p> Here is the link to the Google colab python notebook where I conducted the data analysis. </p>
+        <a href="https://colab.research.google.com/github/theagegeshidze/theagegeshidze.github.io/blob/main/week5.ipynb">
+          Google Colab </a>
 
       </div>
 
@@ -130,8 +166,19 @@
         <h3> Week 10/11: Machine Learning </h3>
         <img src="https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/regressionportfolio.png" alt="Matrix" height = 300px width = 300px/>
         <img src="https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/pcaportfolio.png" alt="Matrix" height = 300px width = 300px/>
-        <p> Here are my learning machines.</p>
-        <p> they are very very advanced </p>
+        <p> Week 11 and 12 were by far the most challenging portfolio tasks and I struggled a lot trying to understand what and why we were doing the techniques
+        we discussed in the lectures. For supervised learning, I chose to explore regression. I understood the process more, and knew that a regression with the
+        correct data would likely prove helpful in my research project. I performed the regression of low carbon intense energy on CO2 emissions, generated the
+        regression graph and exported it. My regression visually shows a positive correlation: higher % of low carbon energy results in decreasing CO2 emissions. However, 
+        although my R value is statistically significant, it is not very high, so although there is a correlation, it is important to note the relation with some caution. </p>
+        <p> For the unsupervised learning, I chose to the PCA method. I chose to perform it on a data set that outlined different continents and various characteristics
+        for each of them. I first practiced the PCA process using the iris dataset in python. The dimensionality reduction process allowed me to take a complex
+        data set with multiple variables, and convert then into a matrix and figure out the relationships between them, whilst staying considerate of their groups. I then
+        plotted this onto a graph, where each colour represents a different group. I changed the axis values so that the plot would be more clear, leaving out 5 data points.</p>
+        
+         <p> Here is the link to the Google colab python notebook where I conducted the data analysis. </p>
+        <a href="https://colab.research.google.com/github/theagegeshidze/theagegeshidze.github.io/blob/main/week5.ipynb">
+          Google Colab </a>
 
       </div>
 
