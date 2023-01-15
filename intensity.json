@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "background": null,
+  "padding": 30,
+  "width": 500,
+  "height": 300,
+  "title": {
+    "text": "Carbon Intensity of Electricity Production in Europe",
+    "color": "hotpink",
+    "fontSize": 16,
+    "subtitlePadding": 5,
+    "fontWeight": 600,
+    "anchor": "start",   
+    "subtitle": "Source: ourworldindata.org project on carbon intensity",
+  },
+  "data": {
+    "values": [
+{"Entity": "Sweden", "Carbon intensity of electricity": 12.18}, {"Entity": "Norway", "Carbon intensity of electricity": 31.52}, {"Entity": "France", "Carbon intensity of electricity": 38.65}, {"Entity": "Switzerland", "Carbon intensity of electricity": 57.57}, {"Entity": "Finland", "Carbon intensity of electricity": 58.85}, {"Entity": "Austria", "Carbon intensity of electricity": 86.78}, {"Entity": "Denmark", "Carbon intensity of electricity": 103.95}, {"Entity": "Spain", "Carbon intensity of electricity": 174.41}, {"Entity": "Belgium", "Carbon intensity of electricity": 182.86}, {"Entity": "Portugal", "Carbon intensity of electricity": 211.7}, {"Entity": "Italy", "Carbon intensity of electricity": 223.25}, {"Entity": "Romania", "Carbon intensity of electricity": 232.1}, {"Entity": "Hungary", "Carbon intensity of electricity": 234.74}, {"Entity": "United Kingdom", "Carbon intensity of electricity": 245.92}, {"Entity": "Ireland", "Carbon intensity of electricity": 287.63}, {"Entity": "Slovenia", "Carbon intensity of electricity": 295.68}, {"Entity": "Germany", "Carbon intensity of electricity": 314.39}, {"Entity": "Bulgaria", "Carbon intensity of electricity": 374.81}, {"Entity": "Czechia", "Carbon intensity of electricity": 406.91}, {"Entity": "Turkey", "Carbon intensity of electricity": 412.37}, {"Entity": "Poland", "Carbon intensity of electricity": 723.17}]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Entity", "type": "nominal","sort":"","title": null, "axis": {"labelAngle": 45}},
+    "y": {"field": "Carbon intensity of electricity", "type": "quantitative","title": "Carbon intensity of electricity KWh"},
+     "color": {"value": "#ff9900"},
+    "order": {"aggregate": "sum", "field": "Carbon intensity of electricity"}
+  }
+}
