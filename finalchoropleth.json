@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "title": {
+    "text": [
+      "Per Capita Emissions 2010-2019"
+    ],
+    "subtitle": "Source: ourworldindata.org",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "hotpink"
+  },
+  "width": 400,
+  "height": 300,
+  "background": null,
+  "config": {"style": {"cell": {"stroke": "transparent"}}},
+  "data": {
+    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/percapita2010.csv"
+  },
+  "transform": [
+    {
+      "lookup": "Country",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/worldcountries.json",
+          "format": {"type": "topojson", "feature": "countries1"}
+        },
+        "key": "properties.name",
+        "fields": ["properties", "type", "geometry"]
+      }
+    },
+    {"filter": "datum.Year==year"}
+  ],
+  "params": [
+    {
+      "name": "year",
+      "value": 2019,
+      "bind": {
+        "input": "range",
+        "min": 2010,
+        "max": 2019,
+        "step": 1,
+        "name": "Year selector:"
+      }
+    }
+  ],
+  "projection": {"type": "equalEarth"},
+  "mark": "geoshape",
+  "encoding": {
+    "color": {"field": "CO2 Emissions per capita", "type": "quantitative"},
+    "tooltip": [
+      {"field": "properties.name", "type": "nominal", "title": "Country"},
+      {"field": "CO2 Emissions per capita", "type": "quantitative"}
+    ]
+  }
+}
