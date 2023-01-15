@@ -15,12 +15,25 @@
     "color": "black"
   },
   "encoding": {
-    "y": {"field": "Energy Type", "sort": "-x", "type": "ordinal", "title": null},
-    "x": {"field": "Deaths per TWh of electricity production", "title": null, "type": "quantitative"},
-   "color": {"value": "#DE3163"},    
+    "y": {
+      "field": "Energy Type",
+      "sort": "-x",
+      "type": "ordinal",
+      "title": null
+    },
+    "x": {
+      "field": "Deaths per TWh of electricity production",
+      "title": null,
+      "type": "quantitative"
+    },
+    "color": {"value": "#DE3163"},
     "tooltip": [
-      {"field": "Energy Type", "type": "nominal", "title": "Food"},
-      {"field": "Deaths per TWh of electricity production", "type": "quantitative", "title": "Deaths "}
+      {"field": "Energy Type", "type": "nominal", "title": "Energy Type"},
+      {
+        "field": "Deaths per TWh of electricity production",
+        "type": "quantitative",
+        "title": "Deaths "
+      }
     ]
   }
 }
