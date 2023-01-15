@@ -15,8 +15,8 @@
     "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/costandemissionsnew.csv"
   },
   "mark": {"type": "bar", "color": "#fa3188", "strokeWidth": 2, "opacity": 1},
-  "height": 380,
-  "width": 500,
+  "height": 300,
+  "width": 300,
   "background": null,
   "config": {"style": {"cell": {"stroke": "transparent"}}},
   "layer": [
@@ -32,7 +32,7 @@
             "type": "gradient",
             "direction": "vertical"
           },
-          "scale": {"scheme":"redpurple"}
+          "scale": {"scheme": "redpurple"}
         }
       }
     }
@@ -56,7 +56,11 @@
         "type": "quantitative",
         "title": "CO2 Emissions"
       },
-      {"field": "Overnight Cost", "type": "nominal", "title": "Overnight Cost ($KW)"}
+      {
+        "field": "Overnight Cost",
+        "type": "nominal",
+        "title": "Overnight Cost ($KW)"
+      }
     ]
   }
 }
