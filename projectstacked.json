@@ -27,7 +27,7 @@
         "min": 1985,
         "max": 2020,
         "step": 1,
-        "name": "Select the year:"
+        "name": "Select the start:"
       }}
   ],
   "mark": "area",
