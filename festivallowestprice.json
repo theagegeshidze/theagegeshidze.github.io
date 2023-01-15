@@ -1,0 +1,49 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A bar chart with negative values. We can hide the axis domain line, and instead use a conditional grid color to draw a zero baseline.",
+  "width": 700,
+  "height": 300,
+  "title": {
+    "text": "Change in Prices of the Lowest Cost Goods",
+    "subtitle": "Source: ONS, change in p from April 2021 to 2022",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/festival_price.csv"
+  },
+  "encoding": {
+    "y": {
+      "field": "Item",
+      "type": "nominal",
+      "sort":"-x",
+      "title": null,
+      "axis": {
+        "domain": false,
+        "ticks": false,
+        "labelAngle": 0,
+        "labelPadding": 8
+      }
+    },
+    "x": {
+      "field": "Change",
+      "type": "quantitative",
+      "title": null,
+      "scale": {"padding": 40},
+      "axis": {
+        "gridColor": {
+          "condition": {"test": "datum.value === 0", "value": "black"},
+          "value": "#ddd"
+        }
+      }
+    }
+  },
+  "layer": [
+    {"mark": "bar",
+    "width": 400,
+  "height": 500}
+   
+  ]
+}
