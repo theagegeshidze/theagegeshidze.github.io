@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "IMF Lending outstanding ",
+    "text": "IMF Lending Outstanding ",
     "subtitle": "Credit outstanding to all members, SDRs ($, billions). Source: IMF",
     "subtitleFontStyle": "italic",
-    "subtitleFontSize": 10,
+    "subtitleFontSize": 9,
     "anchor": "start",
     "color": "black"
   },
@@ -12,7 +12,7 @@
     "url": "https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/data-week2IMF.csv"
   },
   "height": 300,
-  "width": 260,
+  "width": 300,
   "mark": {"type": "bar", "color": "rgb(243, 158, 247)"},
   "encoding": {
     "x": {
