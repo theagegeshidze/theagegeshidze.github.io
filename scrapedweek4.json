@@ -11,26 +11,33 @@
   },
   "data": {
     "values": [
-{"Sources": "Nuclear", "Installed capacity": 61370}, {"Sources": "Hydropower", "Installed capacity": 25466}, {"Sources": "Wind power", "Installed capacity": 17391}, {"Sources": "Gas", "Installed capacity": 12529}, {"Sources": "Solar power", "Installed capacity": 10101}, {"Sources": "Coal", "Installed capacity": 2978}, {"Sources": "Oil", "Installed capacity": 2897}, {"Sources": "Bioenergies", "Installed capacity": 2160}, {"Sources": "Total", "Installed capacity": 134892}]
+      {"Sources": "Nuclear", "Installed capacity": 61370},
+      {"Sources": "Hydropower", "Installed capacity": 25466},
+      {"Sources": "Wind power", "Installed capacity": 17391},
+      {"Sources": "Gas", "Installed capacity": 12529},
+      {"Sources": "Solar power", "Installed capacity": 10101},
+      {"Sources": "Coal", "Installed capacity": 2978},
+      {"Sources": "Oil", "Installed capacity": 2897},
+      {"Sources": "Bioenergies", "Installed capacity": 2160}
+    ]
   },
   "encoding": {
-    "y": {"field": "Sources", "type": "nominal"},
-    "x": {"field": "Installed capacity", "type": "quantitative",
-    "scale": {"domain": [0, 140000]}}
+    "y": {"field": "Sources", "type": "nominal", "title": null},
+    "x": {
+      "field": "Installed capacity",
+      "type": "quantitative",
+      "scale": {"domain": [0, 140000]}
+    }
   },
   "height": 300,
   "width": 400,
-  "layer": [{
-    "mark": "bar"
-  }, {
-    "mark": {
-      "type": "text",
-      "align": "left",
-      "baseline": "middle",
-      "dx": 9
-    },
-    "encoding": {
-      "text": {"field": "Installed capacity", "type": "quantitative"}
+  "layer": [
+    {"mark": "bar"},
+    {
+      "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 9},
+      "encoding": {
+        "text": {"field": "Installed capacity", "type": "quantitative"}
+      }
     }
-  }]
+  ]
 }
