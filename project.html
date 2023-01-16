@@ -85,27 +85,28 @@
   <div class="Carbon Emissions and Cost">
         <h3>Carbon Emissions</h3>
         <div class="chart" id="chart34"> </div>  
+        <div class="chart" id="chart32"> </div>  
   
         <p>Both options are low in carbon emissions, with wind just overtaking nuclear. 
 
          It is important to note that we looked over these emissions in the long run using 
          lifecycle emissions. Over time the emissions from construction are made up for due 
          to the ultra low carbon emissions post commission and economies of scale. Looking at
-         our graph, we can see that all the sources we are considering are remarkably better than coal.
+         our graph, we can see that all the sources we are considering are remarkably better than coal. </p>
 
-         Nuclear reactors cost billions and this price is only going up. On the other hand, renewables, 
+      
+        <p> Nuclear reactors cost billions and this price is only going up. On the other hand, renewables, 
          solar in particular , are decreasing in price rapidly providing a compelling case for renewables.
 
          However, research by the IPCC suggests that overall all the cheapest and most effective solutions do 
-         include nuclear. 
+            include nuclear. </p>
 
-         The only countries that have reached the threshold of decarbonisation are Norway, Sweden and France.
+        <p> The only countries that have reached the threshold of decarbonisation are Norway, Sweden and France.
          Sweden and France with a nuclear/hydro/wind/solar/biomass mix with the first two being the majority. 
          Even Germany, who is championing renewables, does not match this. We can see this information visually and
-         can infer that nuclear power is a useful tool in decarbonising. 
-        </p>  
-        <div class="chart" id="chart32"> </div>  
-        <div class="chart" id="chart37"> </div>
+         can infer that nuclear power is a useful tool in decarbonising. </p>  
+         
+        <div class="chart" id="chart38"> </div>
        <a href="https://colab.research.google.com/github/theagegeshidze/theagegeshidze.github.io/blob/main/costofrenewablesextraction.ipynb">
           Google Colab </a>
         </div>
@@ -118,26 +119,26 @@
         currently largely supplementing this need with coal, which is destroying our planet. Nuclear is a good 
         alternative and still gives us the stability renewables lack.
          </p>
-       <div class="chart" id="chart38"> </div>
+       <div class="chart" id="chart37"> </div>
        </div>
        
    <div class="Conclusion">
         <h3>Conclusion</h3>
-       <a href="https://colab.research.google.com/github/theagegeshidze/theagegeshidze.github.io/blob/main/Lowcarbonenergyregression.ipynb">
-          Google Colab </a>
        
        <img src="https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/regressionportfolio.png" alt="Matrix" height = 300px width = 300px/>
         
         <p>Our regression shows that everything improves if we reduce the carbon intensity of electricity, and it is clear through
-         our graphs and analysis that both nuclear power and renewables will aid in this result.
+         our graphs and analysis that both nuclear power and renewables will aid in this result. </p>
 
-         Renewables are cheap to build, quick to build and allow for rural electrification, however they need a lot of space and 
+        <p> Renewables are cheap to build, quick to build and allow for rural electrification, however they need a lot of space and 
          infrastructure that currently doesn’t exist and lack stability (due to inherent variability). Nuclear on the other hand allows 
-         for great stability, but it is excessively expensive and slow to build; with the average reactor taking 108 months to build (time we do not have).
+         for great stability, but it is excessively expensive and slow to build; with the average reactor taking 108 months to build (time we do not have). </p>
 
-         A 100% renewable economy right now would be unnecessarily complex and rely on research that is not yet fleshed out. Going for a pragmatic
+        <p> A 100% renewable economy right now would be unnecessarily complex and rely on research that is not yet fleshed out. Going for a pragmatic
         hybrid grid allows each source to balance the shortcomings of the other and allow us to deal with the climate crisis quickly and effectively.
         </p>
+       <a href="https://colab.research.google.com/github/theagegeshidze/theagegeshidze.github.io/blob/main/Lowcarbonenergyregression.ipynb">
+          Google Colab </a>
 
        </div>
         
@@ -146,37 +147,20 @@
          <p>For all the data included, I either downloaded an excel or accessed data via an API. I then transformed it into a csv file, 
          cleaned it in Python and put it into long form (TIDY). I then linked this data in various vega-lite data visualisations. There
          were some complications with adding interactivity, or certain characteristics to the bones of the vega-lite visualisations but work
-         in tutorials and codecamp, as well as vega’s own troubleshooting meant all my data visualisations came out the way I wanted them to.
+         in tutorials and codecamp, as well as vega’s own troubleshooting meant all my data visualisations came out the way I wanted them to. </p>
 
-         To access information from the EIA, I signed up for free API access. I had significant issues trying to develop a choropleth using this 
+         <p>To access information from the EIA, I signed up for free API access. I had significant issues trying to develop a choropleth using this 
          information. This was mostly because of ISO matching problems, and differences in country names. This would result in gaps in my map. I 
-         had to redo the code several times before my choropleth map was complete, with no gaps and interactivity.
+         had to redo the code several times before my choropleth map was complete, with no gaps and interactivity.</p>
 
-         I used a variety of data ranging from ourworldindata.org, the ONS, the EIA, and various statistical reviews. Our World in Data only offered
+         <p>I used a variety of data ranging from ourworldindata.org, the ONS, the EIA, and various statistical reviews. Our World in Data only offered
          data through excel direct downloads which means my data doesn’t update. Since most of the information was published annually, this wasn’t really
          a problem. I struggled to find much environmental data that had regular updates, suggesting that governments and institutions should consider
-         monitoring and releasing climate data more regularly.
-        </p>
+             monitoring and releasing climate data more regularly.</p>
+     
         </div>
     
-    
-    <div class="References">
-        <h3>References</h3> 
-    
-   <p> Nuclear accidents: https://en.wikipedia.org/wiki/Nuclear_and_radiation_accidents_and_incidents 
-Per capita emissions: https://ourworldindata.org/grapher/co2-emissions-vs-gdp?time=2012..latest / https://www.worldometers.info/co2-emissions/co2-emissions-by-country/ 
-Global electricity production: https://ourworldindata.org/grapher/electricity-prod-source-stacked 
-Death relating to energy sources: https://ourworldindata.org/grapher/death-rates-from-energy-production-per-twh 
-Co2 Emissions and Life Cost: https://ember-climate.org/insights/research/global-electricity-review-2022/
-LCOE: https://ember-climate.org/insights/research/global-electricity-review-2022/ 
-Carbon Intensity: https://www.ons.gov.uk/economy/environmentalaccounts/datasets/ukenvironmentalaccountsatmosphericemissionsgreenhousegasemissionsintensitybyeconomicsectorunitedkingdom
-EIA API: https://www.eia.gov/opendata/
-IPCC 4 Pathways: https://www.ipcc.ch/site/assets/uploads/sites/2/2019/02/SR15_Chapter2_Low_Res.pdf </p>
-    </div>
-        
-
-
-       
+         
         
 </body>
         
@@ -191,14 +175,7 @@ IPCC 4 Pathways: https://www.ipcc.ch/site/assets/uploads/sites/2/2019/02/SR15_Ch
     var myChart36 = "scrapedweek4.json";
     var myChart37 = "projectstacked.json";
     var myChart38 = "intensitycarbon.json";
-    //var myChart39 = "data_ONS-CUDG.json";
-    //var myChart40 = "data_ONS-CUKY.json";
-    //var myChart41 = "data_ONS-EKED.json";
-    //var myChart42 = "data_ONS-GTAO.json";
-    //var myChart43 = "data_ONS-MF6V.json";
-    //var myChart44 = "data_ONS-MM9F.json";
-    //var myChart45 = "data_ONS-NMBY.json";
-    //var myChart46 = "data_ONS-NZGF.json";
+  
     
     // Embed charts:
     vegaEmbed('#chart31', myChart31);
@@ -209,13 +186,6 @@ IPCC 4 Pathways: https://www.ipcc.ch/site/assets/uploads/sites/2/2019/02/SR15_Ch
     vegaEmbed('#chart36', myChart36);
     vegaEmbed('#chart37', myChart37);
     vegaEmbed('#chart38', myChart38);
-    //vegaEmbed('#chart39', myChart39);
-    //vegaEmbed('#chart40', myChart40);
-    //vegaEmbed('#chart41', myChart41);
-    //vegaEmbed('#chart42', myChart42);
-    //vegaEmbed('#chart43', myChart43);
-    //vegaEmbed('#chart44', myChart44);
-    //vegaEmbed('#chart45', myChart45);
-    //vegaEmbed('#chart46', myChart46);
+
 </script>
 </html>
