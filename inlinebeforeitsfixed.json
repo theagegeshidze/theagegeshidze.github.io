@@ -6,14 +6,14 @@
   "width": 500,
   "height": 300,
   "title": {
-    "text": ["Global Electricity Production", "Data available for 2021"],
+    "text": "Global Electricity Production 2021",
     "subtitle": "Source: ourworldindata.org project on Electricity Mix",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
     "color": "black"
   },
-    "data": {
+  "data": {
     "values": [
       {"Sources": "Other renewables excluding bioenergy", "Percentage": 0.34},
       {"Sources": "Bioenergy", "Percentage": 2.4},
@@ -28,7 +28,13 @@
   },
   "mark": "bar",
   "encoding": {
-    "x": {"field": "Sources", "type": "nominal", "axis": {"labelAngle": 45}},
-    "y": {"field": "Percentage", "type": "quantitative"}
+    "x": {
+      "field": "Sources",
+      "type": "nominal",
+      "title": null,
+      "sort": "",
+      "axis": {"labelAngle": 45}
+    },
+    "y": {"field": "Percentage", "type": "quantitative", "title": "%"}
   }
 }
