@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": " ",
+  "title": {
+    "text": "Carbon Intensity of Electricity in Europe",
+    "subtitle": [
+      "Source: Revenu Generale Nuceleaire and ourworldindata.org "
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url":"https://raw.githubusercontent.com/theagegeshidze/theagegeshidze.github.io/main/carbonintensity.csv"
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Entity", "type": "nominal","sort":"-","title": null, "axis": {"labelAngle": 45}},
+    "y": {"field": "Carbon intensity of electricity", "type": "quantitative","title": null}
+  }
+}
